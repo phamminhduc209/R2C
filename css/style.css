@@ -4571,3 +4571,63 @@ h1.title-main {
   background: #FFF;
   padding: 30px;
 }
+
+.block-detail-r2c .block-product-options .bl-modul-cm .des {
+  float: unset;
+}
+.block-detail-r2c .bl-price {
+  margin-bottom: var(--heading-space);
+}
+.block-detail-r2c .bl-price hr {
+  margin-top: 15px;
+}
+.block-detail-r2c .bl-qty .des .prod_qty {
+  border-radius: 20px;
+  border: 1px solid #06b7a4;
+  text-align: center;
+}
+.block-detail-r2c .block-btn-addtocart .btn-addde {
+  width: 70px;
+}
+.block-detail-r2c .block-btn-addtocart .btn-addde i {
+  font-size: 18px;
+}
+.block-detail-r2c .block-btn-addtocart .btn-like-icon {
+  width: 70px;
+  border-radius: 50px;
+  background: transparent;
+  border-color: #06b7a4;
+}
+.block-detail-r2c .block-btn-addtocart .btn-like-icon:hover {
+  color: #333;
+}
+.block-detail-r2c .block-page-common .block-btn-addtocart .btn span {
+  font-size: 17px;
+  right: -20px;
+}
+.block-detail-r2c .block-btn-people span {
+  border: 1px solid var(--heading-color);
+  padding: 5px;
+  border-radius: 50px;
+  width: 100px;
+  display: inline-block;
+  margin: 5px;
+  cursor: pointer;
+}
+.block-detail-r2c .block-btn-people span:hover, .block-detail-r2c .block-btn-people span.active {
+  background: var(--heading-color);
+  color: #FFF;
+}
+.block-relative-r2c .item p {
+  border-top: 1px solid #989798;
+  margin-top: 15px;
+  padding-top: 15px;
+}
+.block-breadcrumb.block-breadcrumb-r2c .breadcrumb li a {
+  color: #06b7a4;
+}
+.block-breadcrumb.block-breadcrumb-r2c .breadcrumb>li+li:before {
+    padding: 0 5px;
+    color: #06b7a4;
+    content: "/";
+}
