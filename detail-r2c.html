@@ -88,23 +88,51 @@
             }(document, 'script', 'facebook-jssdk'));
         </script>
         <div id="wrapper">
-            <header class="header2 header-layout-2">
-                <div class="header-main">
-                    <div class="container">
-                        <div class="row">
-                            <div class="display-table">
-                                <div class="header-logo col-sm-3 text-center display-table-cell">
-                                    <div id="logo">
-                                        <a href="https://enb.vn/"><img class="lazyload" src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-src="https://enb.vn/uploads/images/logo-banner/lg1.jpg" alt="Logo"></a>
+            <header class="header-r2c">
+                <div class="header-r2c-inner">
+                    <div class="header-r2c-top">
+                        <div class="container">
+                            <div class="row">
+                                <div class="display-table">
+                                    <div class="header-logo col-sm-2 text-center display-table-cell">
+                                        <div id="logo">
+                                            <a href="https://enb.vn/">
+                                            <img class="lazyload" src="images/logo.png" data-src="images/logo.png" alt="Logo">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 display-table-cell">
+                                        <div class="search-r2c">
+                                            <form action="/timkiem" method="GET">
+                                                <div class="input-group stylish-input-group">
+                                                    <input name="keyword" type="text" class="form-control" placeholder="Nhập thông tin tìm kiếm...">
+                                                    <span class="input-group-addon"><button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button></span>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4 display-table-cell">
+                                        <div class="header-toolbox">
+                                            <ul>
+                                                <li><a data-toggle="modal" data-target="#modalLogin" href="javascript:;"><i class="fa fa-lock"></i> Đăng nhập</a></li>
+                                                <li><a data-toggle="modal" data-target="#modalRegister" href="javascript:;"><i class="fa fa-user"></i> Đăng ký</a></li>
+                                                <li><a href="#" class="cart"><i class="fa fa-shopping-basket animation-cart"></i><span class="cart-ajax">0</span></a></li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-sm-8 header-text-static display-table-cell">
-                                    <h2>Nâng cao chất lượng cuộc sống cho gia đình nhỏ của bạn!</h2>
-                                </div>
-                                <div class="col-sm-2 header-toolbox display-table-cell">
-                                    <a href="#collapseSearch1" data-toggle="collapse" aria-expanded="false" aria-controls="collapseSearch1" class="search collapsed" ><i class="fa fa-search" aria-hidden="true"></i></a>
-                                </div>
                             </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="menu-r2c">
+                            <ul>
+                                <li><a href="#" title="">Trang Chủ</a></li>
+                                <li class="active"><a href="r2c.html" title="">R2C</a></li>
+                                <li><a href="#" title="">HTD</a></li>
+                                <li><a href="#" title="">DNRT</a></li>
+                                <li><a href="#" title="">Liên Hệ</a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -135,131 +163,6 @@
                 </div>
             </header>
             <div class="mocmenu"></div>
-            <div class="menu hidden-xs hidden-sm">
-                <div class="nav-toogle mb-nav-bars"><i class="fa"></i></div>
-                <nav class="menu-top">
-                    <div class="container">
-                        <div class="row">
-                            <div class="display-table">
-                                <ul class="nav-menu col-sm-8 display-table-cell">
-                                    <li class="level0 ">
-                                        <a class="cap0" href="https://enb.vn" title="Trang chủ">
-                                        Trang chủ              </a>
-                                    </li>
-                                    <li class="level0 ">
-                                        <a class="cap0" href="https://enb.vn/gioi-thieu-t138.html" title="Giới thiệu">
-                                        Giới thiệu              </a>
-                                    </li>
-                                    <li class="level0 parent">
-                                        <a class="cap0" href="https://enb.vn/san-pham-c224" title="Sản phẩm">
-                                        Sản phẩm              </a>
-                                        <ul class="level0 submenu">
-                                            <li class="level1 parent">
-                                                <a href="https://enb.vn/goc-van-vat-c233" title="Góc ăn vặt">Góc ăn vặt</a>
-                                                <ul class="level1 submenu">
-                                                    <li class="level2"><a href="https://enb.vn/thit-kho-c295" title="Từ 10.000 đến 50.000 đồng">Từ 10.000 đến 50.000 đồng</a></li>
-                                                    <li class="level2"><a href="https://enb.vn/hat-c296" title="Trên 50.000 đồng">Trên 50.000 đồng</a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="level1 parent">
-                                                <a href="https://enb.vn/nuoc-uong-co-gas-len-men-c232" title="Thức uống">Thức uống</a>
-                                                <ul class="level1 submenu">
-                                                    <li class="level2"><a href="https://enb.vn/sua-tu-hat-c264" title="Sữa từ hạt">Sữa từ hạt</a></li>
-                                                    <li class="level2"><a href="https://enb.vn/tra-c267" title="Trà/Cà phê">Trà/Cà phê</a></li>
-                                                    <li class="level2"><a href="https://enb.vn/nuoc-trai-cay-c266" title="Nước trái cây">Nước trái cây</a></li>
-                                                    <li class="level2"><a href="https://enb.vn/sua-cong-thuc-c285" title="Thức uống khác">Thức uống khác</a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="level1 parent">
-                                                <a href="https://enb.vn/cham-soc-ban-than-c291" title="Chăm sóc bản thân">Chăm sóc bản thân</a>
-                                                <ul class="level1 submenu">
-                                                    <li class="level2"><a href="https://enb.vn/dau-goi-c271" title="Dầu gội/ Dầu xả">Dầu gội/ Dầu xả</a></li>
-                                                    <li class="level2"><a href="https://enb.vn/sua-tam-xa-bong-cuc-c273" title="Sữa tắm/ Xà bông cục">Sữa tắm/ Xà bông cục</a></li>
-                                                    <li class="level2"><a href="https://enb.vn/nuoc-rua-tay-c282" title="Nước rửa tay">Nước rửa tay</a></li>
-                                                    <li class="level2"><a href="https://enb.vn/kem-danh-rang-nuoc-suc-mieng-c276" title="Sản phẩm chăm sóc răng miệng">Sản phẩm chăm sóc răng miệng</a></li>
-                                                    <li class="level2"><a href="https://enb.vn/lan-khu-mui-c281" title="Sản phẩm khử mùi">Sản phẩm khử mùi</a></li>
-                                                    <li class="level2"><a href="https://enb.vn/nuoc-tay-trang-hoa-hong-c278" title="Sản phẩm làm đẹp">Sản phẩm làm đẹp</a></li>
-                                                    <li class="level2"><a href="https://enb.vn/bang-ve-sinh-c293" title="Sản phẩm cho nữ">Sản phẩm cho nữ</a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="level1 parent">
-                                                <a href="https://enb.vn/ve-sinh-nha-cua-c227" title="Vệ sinh nhà cửa">Vệ sinh nhà cửa</a>
-                                                <ul class="level1 submenu">
-                                                    <li class="level2"><a href="https://enb.vn/ve-sinh-quan-ao-vai-voc-c288" title="Tẩy rửa quần áo/vải vóc">Tẩy rửa quần áo/vải vóc</a></li>
-                                                    <li class="level2"><a href="https://enb.vn/khan-giay-kho--khan-giay-uot-c283" title="Khăn giấy khô/ Khăn giấy ướt">Khăn giấy khô/ Khăn giấy ướt</a></li>
-                                                    <li class="level2"><a href="https://enb.vn/tay-rua-nha-bep-c299" title="Sản phẩm nhà bếp">Sản phẩm nhà bếp</a></li>
-                                                    <li class="level2"><a href="https://enb.vn/xit-phong-sap-thom-c257" title="Xịt phòng/ Sáp thơm">Xịt phòng/ Sáp thơm</a></li>
-                                                    <li class="level2"><a href="https://enb.vn/nuoc-tay-rua-bon-cau--nha-tam-c254" title="Nước tẩy rửa bồn cầu, nhà tắm">Nước tẩy rửa bồn cầu, nhà tắm</a></li>
-                                                    <li class="level2"><a href="https://enb.vn/nuoc-lau-san-c253" title="Nước lau sàn">Nước lau sàn</a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="level1 parent">
-                                                <a href="https://enb.vn/gia-vi-thuc-pham-c229" title="Thực phẩm">Thực phẩm</a>
-                                                <ul class="level1 submenu">
-                                                    <li class="level2"><a href="https://enb.vn/thuc-pham-an-lien-c290" title="Thực phẩm ăn liền">Thực phẩm ăn liền</a></li>
-                                                    <li class="level2"><a href="https://enb.vn/duong-muoi-bot-ngot-hat-nem-c249" title="Gia vị thực phẩm">Gia vị thực phẩm</a></li>
-                                                    <li class="level2"><a href="https://enb.vn/dau-an-dau-hao-c237" title="Dầu ăn các loại">Dầu ăn các loại</a></li>
-                                                    <li class="level2"><a href="https://enb.vn/gao-c240" title="Gạo">Gạo</a></li>
-                                                    <li class="level2"><a href="https://enb.vn/ngu-coc-an-lien-c269" title="Ngũ cốc">Ngũ cốc</a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="level1 ">
-                                                <a href="https://enb.vn/san-pham-cho-me-va-be-c231" title="Sản phẩm cho bé">Sản phẩm cho bé</a>
-                                            </li>
-                                            <li class="level1 ">
-                                                <a href="https://enb.vn/san-pham-huu-co-c225" title="Sản phẩm hữu cơ">Sản phẩm hữu cơ</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="level0 ">
-                                        <a class="cap0" href="https://enb.vn/qua-tang" title="Mẫu thử">
-                                        Mẫu thử              </a>
-                                    </li>
-                                    <li class="level0 ">
-                                        <a class="cap0" href="https://enb.vn/flash-sale" title="Flash Sale">
-                                        Flash Sale              </a>
-                                    </li>
-                                    <li class="level0 parent">
-                                        <a class="cap0" href="#" title="Thông tin">
-                                        Thông tin              </a>
-                                        <ul class="level0 submenu">
-                                            <li class="level1 ">
-                                                <a href="https://enb.vn/tin-tuc-tt24" title="Tin tức">Tin tức</a>
-                                            </li>
-                                            <li class="level1 ">
-                                                <a href="https://enb.vn/chinh-sach-tt48" title="Chính sách">Chính sách</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="level0 ">
-                                        <a class="cap0" href="https://enb.vn/lien-he" title="Liên hệ">
-                                        Liên hệ              </a>
-                                    </li>
-                                </ul>
-                                <div class="header-toolbox col-sm-4 display-table-cell">
-                                    <ul>
-                                        <li><a data-toggle="modal" data-target="#modalLogin" href="javascript:;"><i class="fa fa-lock"></i> Đăng nhập</a></li>
-                                        <li><a data-toggle="modal" data-target="#modalRegister" href="javascript:;"><i class="fa fa-user"></i> Đăng ký</a></li>
-                                        <li><a href="https://enb.vn/cart" class="cart"><i class="fa fa-shopping-basket animation-cart"></i><span class="cart-ajax">0</span></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </nav>
-                <div class="dropfrm-search collapse" id="collapseSearch1" aria-expanded="false" style="height: 0px;">
-                    <div class="container">
-                        <div class="nav-search">
-                            <form action="https://enb.vn/timkiem" method="GET">
-                                <div class="input-group stylish-input-group">
-                                    <input name="keyword" type="text" class="form-control" placeholder="Nhập thông tin tìm kiếm...">
-                                    <span class="input-group-addon"><button type="submit">Tìm kiếm</button></span>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
             <!-- Mobile -->
             <script type="text/javascript">
                 $(function() {
@@ -485,42 +388,307 @@
                                     <div class="col-sm-4 col-xs-12">
                                         <div class="item text-center">
                                             <img src="images/01.jpg" alt="" />
-                                            <p>Cá trắm đen hấp gừng nấm</p>
+                                            <p class="name">Cá trắm đen hấp gừng nấm</p>
                                         </div>
                                     </div>
                                     <div class="col-sm-4 col-xs-12">
                                         <div class="item text-center">
                                             <img src="images/02.jpg" alt="" />
-                                            <p>Tôm sú xào đậu côve</p>
+                                            <p class="name">Tôm sú xào đậu côve</p>
                                         </div>
                                     </div>
                                     <div class="col-sm-4 col-xs-12">
                                         <div class="item text-center">
                                             <img src="images/03.jpg" alt="" />
-                                            <p>Cải xanh luộc chấm mắm tỏi</p>
+                                            <p class="name">Cải xanh luộc chấm mắm tỏi</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="block block-relative-r2c">
                                 <div class="block-title"><h2 class="fs18">CÁC BỮA ĂN GỢI Ý</h2></div>
-                                <div class="block-content row">
-                                    <div class="col-sm-4 col-xs-12">
-                                        <div class="item text-center">
-                                            <img src="images/01.jpg" alt="" />
-                                            <p>Cá trắm đen hấp gừng nấm</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4 col-xs-12">
-                                        <div class="item text-center">
-                                            <img src="images/02.jpg" alt="" />
-                                            <p>Tôm sú xào đậu côve</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4 col-xs-12">
-                                        <div class="item text-center">
-                                            <img src="images/03.jpg" alt="" />
-                                            <p>Cải xanh luộc chấm mắm tỏi</p>
+                                <div class="block-content block-product-r2c">
+                                    <div class="block-slides">
+                                        <div class="owl-carousel" data-nav="true" data-margin="0" data-items='5' data-autoplayTimeout="700" data-autoplay="false" data-loop="true" data-responsive='{"678":{"mergeFit":true},"1000":{"mergeFit":false}}'>
+                                            <div class="item" data-merge="2">
+                                                <div class="item-2-pro clearfix">
+                                                    <div class="inner">
+                                                        <div class="product-r2c">
+                                                            <div class="image">
+                                                                <a href="#" title="">
+                                                                    <img class="" src="images/R2C_03.jpg" />
+                                                                    <span>Ba chỉ lợn rang</span>
+                                                                </a>
+                                                                <a href="#" title="">
+                                                                    <img class="" src="images/R2C_08.jpg" />
+                                                                    <span>Canh rau ngót nấu thịt xay</span>
+                                                                </a>
+                                                            </div>
+                                                            <div class="people text-center">
+                                                                <span class="active">2 Người</span>
+                                                                <span>2-4 Người</span>
+                                                            </div>
+                                                            <div class="block-button-item">
+                                                                <a href="javascript:;" class="btn-add-cart-icon btn_add_cart"><i class="fa fa-shopping-cart"></i></a>
+                                                                <a href="javascript:;" class="btn-like-icon" data-like="1334"><i class="fa fa-thumbs-up"></i><span class="likes">0</span></a>
+                                                            </div>
+                                                            <h5 class="title"><a href="#" data-toggle="modal" data-target="#myModal">Bữa ăn nhanh gọn 1</a></h5>
+                                                            <div class="price">
+                                                                <p class="price-sale">85,000đ</p>
+                                                                <p class="price-menber">
+                                                                    <span>68,000đ</span>
+                                                                    <span class="price-menber-info">
+                                                                    <span>(Giá của thành viên)</span>
+                                                                    <a href="#" title="">(Đăng Ký)</a>
+                                                                    </span>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item" data-merge="3">
+                                                <div class="item-pro">
+                                                    <div class="inner">
+                                                        <div class="product-r2c">
+                                                            <div class="image image-3-item">
+                                                                <a href="#" title="">
+                                                                    <img class="" src="images/R2C_03.jpg" />
+                                                                    <span>Ba chỉ lợn rang</span>
+                                                                </a>
+                                                                <a href="#" title="">
+                                                                    <img class="" src="images/R2C_08.jpg" />
+                                                                    <span>Canh rau ngót nấu thịt xay</span>
+                                                                </a>
+                                                                <a href="#" title="">
+                                                                    <img class="" src="images/R2C_03.jpg" />
+                                                                    <span>Canh rau ngót nấu thịt xay</span>
+                                                                </a>
+                                                            </div>
+                                                            <div class="people text-center">
+                                                                <span>2 Người</span>
+                                                                <span>2-4 Người</span>
+                                                            </div>
+                                                            <div class="block-button-item">
+                                                                <a href="javascript:;" class="btn-add-cart-icon btn_add_cart"><i class="fa fa-shopping-cart"></i></a>
+                                                                <a href="javascript:;" class="btn-like-icon" data-like="1334"><i class="fa fa-thumbs-up"></i><span class="likes">0</span></a>
+                                                            </div>
+                                                            <h5 class="title"><a href="#">Bữa ăn nhanh gọn 1</a></h5>
+                                                            <div class="price">
+                                                                <p class="price-sale">85,000đ
+                                                                <p>
+                                                                <p class="price-menber">
+                                                                    <span>68,000đ</span>
+                                                                    <span class="price-menber-info">
+                                                                    <span>(Giá của thành viên)</span>
+                                                                    <a href="#" title="">(Đăng Ký)</a>
+                                                                    </span>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item" data-merge="3">
+                                                <div class="item-pro">
+                                                    <div class="inner">
+                                                        <div class="product-r2c">
+                                                            <div class="image image-3-item">
+                                                                <a href="#" title="">
+                                                                    <img class="" src="images/R2C_03.jpg" />
+                                                                    <span>Ba chỉ lợn rang</span>
+                                                                </a>
+                                                                <a href="#" title="">
+                                                                    <img class="" src="images/R2C_08.jpg" />
+                                                                    <span>Canh rau ngót nấu thịt xay</span>
+                                                                </a>
+                                                                <a href="#" title="">
+                                                                    <img class="" src="images/R2C_03.jpg" />
+                                                                    <span>Canh rau ngót nấu thịt xay</span>
+                                                                </a>
+                                                            </div>
+                                                            <div class="people text-center">
+                                                                <span>2 Người</span>
+                                                                <span>2-4 Người</span>
+                                                            </div>
+                                                            <div class="block-button-item">
+                                                                <a href="javascript:;" class="btn-add-cart-icon btn_add_cart"><i class="fa fa-shopping-cart"></i></a>
+                                                                <a href="javascript:;" class="btn-like-icon" data-like="1334"><i class="fa fa-thumbs-up"></i><span class="likes">0</span></a>
+                                                            </div>
+                                                            <h5 class="title"><a href="#">Bữa ăn nhanh gọn 1</a></h5>
+                                                            <div class="price">
+                                                                <p class="price-sale">85,000đ
+                                                                <p>
+                                                                <p class="price-menber">
+                                                                    <span>68,000đ</span>
+                                                                    <span class="price-menber-info">
+                                                                    <span>(Giá của thành viên)</span>
+                                                                    <a href="#" title="">(Đăng Ký)</a>
+                                                                    </span>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item" data-merge="2">
+                                                <div class="item-2-pro clearfix">
+                                                    <div class="inner">
+                                                        <div class="product-r2c">
+                                                            <div class="image">
+                                                                <a href="#" title="">
+                                                                    <img class="" src="images/R2C_03.jpg" />
+                                                                    <span>Ba chỉ lợn rang</span>
+                                                                </a>
+                                                                <a href="#" title="">
+                                                                    <img class="" src="images/R2C_08.jpg" />
+                                                                    <span>Canh rau ngót nấu thịt xay</span>
+                                                                </a>
+                                                            </div>
+                                                            <div class="people text-center">
+                                                                <span class="active">2 Người</span>
+                                                                <span>2-4 Người</span>
+                                                            </div>
+                                                            <div class="block-button-item">
+                                                                <a href="javascript:;" class="btn-add-cart-icon btn_add_cart"><i class="fa fa-shopping-cart"></i></a>
+                                                                <a href="javascript:;" class="btn-like-icon" data-like="1334"><i class="fa fa-thumbs-up"></i><span class="likes">0</span></a>
+                                                            </div>
+                                                            <h5 class="title"><a href="#" data-toggle="modal" data-target="#myModal">Bữa ăn nhanh gọn 1</a></h5>
+                                                            <div class="price">
+                                                                <p class="price-sale">85,000đ</p>
+                                                                <p class="price-menber">
+                                                                    <span>68,000đ</span>
+                                                                    <span class="price-menber-info">
+                                                                    <span>(Giá của thành viên)</span>
+                                                                    <a href="#" title="">(Đăng Ký)</a>
+                                                                    </span>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item" data-merge="2">
+                                                <div class="item-2-pro clearfix">
+                                                    <div class="inner">
+                                                        <div class="product-r2c">
+                                                            <div class="image">
+                                                                <a href="#" title="">
+                                                                    <img class="" src="images/R2C_03.jpg" />
+                                                                    <span>Ba chỉ lợn rang</span>
+                                                                </a>
+                                                                <a href="#" title="">
+                                                                    <img class="" src="images/R2C_08.jpg" />
+                                                                    <span>Canh rau ngót nấu thịt xay</span>
+                                                                </a>
+                                                            </div>
+                                                            <div class="people text-center">
+                                                                <span class="active">2 Người</span>
+                                                                <span>2-4 Người</span>
+                                                            </div>
+                                                            <div class="block-button-item">
+                                                                <a href="javascript:;" class="btn-add-cart-icon btn_add_cart"><i class="fa fa-shopping-cart"></i></a>
+                                                                <a href="javascript:;" class="btn-like-icon" data-like="1334"><i class="fa fa-thumbs-up"></i><span class="likes">0</span></a>
+                                                            </div>
+                                                            <h5 class="title"><a href="#" data-toggle="modal" data-target="#myModal">Bữa ăn nhanh gọn 1</a></h5>
+                                                            <div class="price">
+                                                                <p class="price-sale">85,000đ</p>
+                                                                <p class="price-menber">
+                                                                    <span>68,000đ</span>
+                                                                    <span class="price-menber-info">
+                                                                    <span>(Giá của thành viên)</span>
+                                                                    <a href="#" title="">(Đăng Ký)</a>
+                                                                    </span>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item" data-merge="3">
+                                                <div class="item-pro">
+                                                    <div class="inner">
+                                                        <div class="product-r2c">
+                                                            <div class="image image-3-item">
+                                                                <a href="#" title="">
+                                                                    <img class="" src="images/R2C_03.jpg" />
+                                                                    <span>Ba chỉ lợn rang</span>
+                                                                    </a>
+                                                                <a href="#" title="">
+                                                                    <img class="" src="images/R2C_08.jpg" />
+                                                                    <span>Canh rau ngót nấu thịt xay</span>
+                                                                </a>
+                                                                <a href="#" title="">
+                                                                    <img class="" src="images/R2C_03.jpg" />
+                                                                    <span>Canh rau ngót nấu thịt xay</span>
+                                                                </a>
+                                                            </div>
+                                                            <div class="people text-center">
+                                                                <span>2 Người</span>
+                                                                <span>2-4 Người</span>
+                                                            </div>
+                                                            <div class="block-button-item">
+                                                                <a href="javascript:;" class="btn-add-cart-icon btn_add_cart"><i class="fa fa-shopping-cart"></i></a>
+                                                                <a href="javascript:;" class="btn-like-icon" data-like="1334"><i class="fa fa-thumbs-up"></i><span class="likes">0</span></a>
+                                                            </div>
+                                                            <h5 class="title"><a href="#">Bữa ăn nhanh gọn 1</a></h5>
+                                                            <div class="price">
+                                                                <p class="price-sale">85,000đ
+                                                                <p>
+                                                                <p class="price-menber">
+                                                                    <span>68,000đ</span>
+                                                                    <span class="price-menber-info">
+                                                                    <span>(Giá của thành viên)</span>
+                                                                    <a href="#" title="">(Đăng Ký)</a>
+                                                                    </span>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item" data-merge="3">
+                                                <div class="item-pro">
+                                                    <div class="inner">
+                                                        <div class="product-r2c">
+                                                            <div class="image image-3-item">
+                                                                <a href="#" title="">
+                                                                    <img class="" src="images/R2C_03.jpg" />
+                                                                    <span>Ba chỉ lợn rang</span>
+                                                                </a>
+                                                                <a href="#" title="">
+                                                                    <img class="" src="images/R2C_08.jpg" />
+                                                                    <span>Canh rau ngót nấu thịt xay</span>
+                                                                </a>
+                                                                <a href="#" title="">
+                                                                    <img class="" src="images/R2C_03.jpg" />
+                                                                    <span>Canh rau ngót nấu thịt xay</span>
+                                                                </a>
+                                                            </div>
+                                                            <div class="people text-center">
+                                                                <span>2 Người</span>
+                                                                <span>2-4 Người</span>
+                                                            </div>
+                                                            <div class="block-button-item">
+                                                                <a href="javascript:;" class="btn-add-cart-icon btn_add_cart"><i class="fa fa-shopping-cart"></i></a>
+                                                                <a href="javascript:;" class="btn-like-icon" data-like="1334"><i class="fa fa-thumbs-up"></i><span class="likes">0</span></a>
+                                                            </div>
+                                                            <h5 class="title"><a href="#">Bữa ăn nhanh gọn 1</a></h5>
+                                                            <div class="price">
+                                                                <p class="price-sale">85,000đ
+                                                                <p>
+                                                                <p class="price-menber">
+                                                                    <span>68,000đ</span>
+                                                                    <span class="price-menber-info">
+                                                                    <span>(Giá của thành viên)</span>
+                                                                    <a href="#" title="">(Đăng Ký)</a>
+                                                                    </span>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
