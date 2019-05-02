@@ -88,7 +88,7 @@
             }(document, 'script', 'facebook-jssdk'));
         </script>
         <div id="wrapper">
-            <header class="header-r2c">
+            <header class="header-r2c hidden-xs">
                 <div class="header-r2c-inner">
                     <div class="header-r2c-top">
                         <div class="container">
@@ -337,9 +337,9 @@
                                 <a href="#" title="Bữa Ăn Nhanh Gọn">Bữa Ăn Nhanh Gọn</a>
                             </h3>
                             <div class="block-slides">
-                                <div class="owl-carousel" data-nav="true" data-margin="0" data-items='5' data-autoplayTimeout="700" data-autoplay="false" data-loop="true" data-responsive='{"678":{"mergeFit":true},"1000":{"mergeFit":false}}'>
-                                    <div class="item" data-merge="2">
-                                        <div class="item-2-pro clearfix">
+                                <div class="owl-carousel">
+                                    <div class="item" style="width: 430px;">
+                                        <div class="item-pro clearfix">
                                             <div class="inner">
                                                 <div class="product-r2c">
                                                     <div class="image">
@@ -375,7 +375,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="item" data-merge="3">
+                                    <div class="item" style="width: 640px;">
                                         <div class="item-pro">
                                             <div class="inner">
                                                 <div class="product-r2c">
@@ -403,8 +403,7 @@
                                                     </div>
                                                     <h5 class="title"><a href="#">Bữa ăn nhanh gọn 1</a></h5>
                                                     <div class="price">
-                                                        <p class="price-sale">85,000đ
-                                                        <p>
+                                                        <p class="price-sale">85,000đ</p>
                                                         <p class="price-menber">
                                                             <span>68,000đ</span>
                                                             <span class="price-menber-info">
@@ -417,7 +416,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="item" data-merge="3">
+                                    <div class="item" style="width: 640px;">
                                         <div class="item-pro">
                                             <div class="inner">
                                                 <div class="product-r2c">
@@ -445,8 +444,7 @@
                                                     </div>
                                                     <h5 class="title"><a href="#">Bữa ăn nhanh gọn 1</a></h5>
                                                     <div class="price">
-                                                        <p class="price-sale">85,000đ
-                                                        <p>
+                                                        <p class="price-sale">85,000đ</p>
                                                         <p class="price-menber">
                                                             <span>68,000đ</span>
                                                             <span class="price-menber-info">
@@ -459,8 +457,8 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="item" data-merge="2">
-                                        <div class="item-2-pro clearfix">
+                                    <div class="item" style="width: 430px;">
+                                        <div class="item-pro clearfix">
                                             <div class="inner">
                                                 <div class="product-r2c">
                                                     <div class="image">
@@ -496,8 +494,8 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="item" data-merge="2">
-                                        <div class="item-2-pro clearfix">
+                                    <div class="item" style="width: 430px;">
+                                        <div class="item-pro clearfix">
                                             <div class="inner">
                                                 <div class="product-r2c">
                                                     <div class="image">
@@ -533,7 +531,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="item" data-merge="3">
+                                    <div class="item" style="width: 640px;">
                                         <div class="item-pro">
                                             <div class="inner">
                                                 <div class="product-r2c">
@@ -561,8 +559,7 @@
                                                     </div>
                                                     <h5 class="title"><a href="#">Bữa ăn nhanh gọn 1</a></h5>
                                                     <div class="price">
-                                                        <p class="price-sale">85,000đ
-                                                        <p>
+                                                        <p class="price-sale">85,000đ</p>
                                                         <p class="price-menber">
                                                             <span>68,000đ</span>
                                                             <span class="price-menber-info">
@@ -575,7 +572,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="item" data-merge="3">
+                                    <div class="item" style="width: 640px;">
                                         <div class="item-pro">
                                             <div class="inner">
                                                 <div class="product-r2c">
@@ -603,8 +600,7 @@
                                                     </div>
                                                     <h5 class="title"><a href="#">Bữa ăn nhanh gọn 1</a></h5>
                                                     <div class="price">
-                                                        <p class="price-sale">85,000đ
-                                                        <p>
+                                                        <p class="price-sale">85,000đ</p>
                                                         <p class="price-menber">
                                                             <span>68,000đ</span>
                                                             <span class="price-menber-info">
@@ -618,252 +614,255 @@
                                         </div>
                                     </div>
                                 </div>
+                                <script>
+                                    $('.block-slides .owl-carousel').owlCarousel({
+                                        margin:10,
+                                        loop:true,
+                                        autoWidth:true,
+                                        items:4
+                                    })
+                                </script>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="block block-product-r2c">
+                <div class="block block-product-r2c hidden">
                     <div class="container">
-                        <div class="row">
-                            <div class="block-content-r2c">
-                                <h3 class="title-r2c">
-                                    <a href="#" title="Bữa Ăn Nhanh Gọn">Bữa Ăn Nhanh Gọn</a>
-                                </h3>
-                                <div class="block-slides">
-                                    <div class="owl-carousel" data-nav="true" data-margin="0" data-items='5' data-autoplayTimeout="700" data-autoplay="false" data-loop="true" data-responsive='{"678":{"mergeFit":true},"1000":{"mergeFit":false}}'>
-                                        <div class="item" data-merge="3">
-                                            <div class="item-pro">
-                                                <div class="inner">
-                                                    <div class="product-r2c">
-                                                        <div class="image image-3-item">
-                                                            <a href="#" title="">
-                                                                <img class="" src="images/R2C_03.jpg" />
-                                                                <span>Ba chỉ lợn rang</span>
-                                                            </a>
-                                                            <a href="#" title="">
-                                                                <img class="" src="images/R2C_08.jpg" />
-                                                                <span>Canh rau ngót nấu thịt xay</span>
-                                                            </a>
-                                                            <a href="#" title="">
-                                                                <img class="" src="images/R2C_03.jpg" />
-                                                                <span>Canh rau ngót nấu thịt xay</span>
-                                                            </a>
-                                                        </div>
-                                                        <div class="people text-center">
-                                                            <span>2 Người</span>
-                                                            <span>2-4 Người</span>
-                                                        </div>
-                                                        <div class="block-button-item">
-                                                            <a href="javascript:;" class="btn-add-cart-icon btn_add_cart"><i class="fa fa-shopping-cart"></i></a>
-                                                            <a href="javascript:;" class="btn-like-icon" data-like="1334"><i class="fa fa-thumbs-up"></i><span class="likes">0</span></a>
-                                                        </div>
-                                                        <h5 class="title"><a href="#">Bữa ăn nhanh gọn 1</a></h5>
-                                                        <div class="price">
-                                                            <p class="price-sale">85,000đ
-                                                            <p>
-                                                            <p class="price-menber">
-                                                                <span>68,000đ</span>
-                                                                <span class="price-menber-info">
-                                                                <span>(Giá của thành viên)</span>
-                                                                <a href="#" title="">(Đăng Ký)</a>
-                                                                </span>
-                                                            </p>
-                                                        </div>
+                        <div class="block-content-r2c">
+                            <h3 class="title-r2c">
+                                <a href="#" title="Bữa Ăn Nhanh Gọn">Bữa Ăn Nhanh Gọn</a>
+                            </h3>
+                            <div class="block-slides">
+                                <div class="owl-carousel" data-nav="true" data-margin="0" data-items='5' data-autoplayTimeout="700" data-autoplay="false" data-loop="true" data-responsive='{"678":{"mergeFit":true},"1000":{"mergeFit":false}}'>
+                                    <div class="item" data-merge="3">
+                                        <div class="item-pro">
+                                            <div class="inner">
+                                                <div class="product-r2c">
+                                                    <div class="image image-3-item">
+                                                        <a href="#" title="">
+                                                            <img class="" src="images/R2C_03.jpg" />
+                                                            <span>Ba chỉ lợn rang</span>
+                                                        </a>
+                                                        <a href="#" title="">
+                                                            <img class="" src="images/R2C_08.jpg" />
+                                                            <span>Canh rau ngót nấu thịt xay</span>
+                                                        </a>
+                                                        <a href="#" title="">
+                                                            <img class="" src="images/R2C_03.jpg" />
+                                                            <span>Canh rau ngót nấu thịt xay</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="people text-center">
+                                                        <span>2 Người</span>
+                                                        <span>2-4 Người</span>
+                                                    </div>
+                                                    <div class="block-button-item">
+                                                        <a href="javascript:;" class="btn-add-cart-icon btn_add_cart"><i class="fa fa-shopping-cart"></i></a>
+                                                        <a href="javascript:;" class="btn-like-icon" data-like="1334"><i class="fa fa-thumbs-up"></i><span class="likes">0</span></a>
+                                                    </div>
+                                                    <h5 class="title"><a href="#">Bữa ăn nhanh gọn 1</a></h5>
+                                                    <div class="price">
+                                                        <p class="price-sale">85,000đ</p>
+                                                        <p class="price-menber">
+                                                            <span>68,000đ</span>
+                                                            <span class="price-menber-info">
+                                                            <span>(Giá của thành viên)</span>
+                                                            <a href="#" title="">(Đăng Ký)</a>
+                                                            </span>
+                                                        </p>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="item" data-merge="2">
-                                            <div class="item-2-pro clearfix">
-                                                <div class="inner">
-                                                    <div class="product-r2c">
-                                                        <div class="image">
-                                                            <a href="#" title="">
-                                                                <img class="" src="images/R2C_03.jpg" />
-                                                                <span>Ba chỉ lợn rang</span>
-                                                            </a>
-                                                            <a href="#" title="">
-                                                                <img class="" src="images/R2C_08.jpg" />
-                                                                <span>Canh rau ngót nấu thịt xay</span>
-                                                            </a>
-                                                        </div>
-                                                        <div class="people text-center">
-                                                            <span class="active">2 Người</span>
-                                                            <span>2-4 Người</span>
-                                                        </div>
-                                                        <div class="block-button-item">
-                                                            <a href="javascript:;" class="btn-add-cart-icon btn_add_cart"><i class="fa fa-shopping-cart"></i></a>
-                                                            <a href="javascript:;" class="btn-like-icon" data-like="1334"><i class="fa fa-thumbs-up"></i><span class="likes">0</span></a>
-                                                        </div>
-                                                        <h5 class="title"><a href="#" data-toggle="modal" data-target="#myModal">Bữa ăn nhanh gọn 1</a></h5>
-                                                        <div class="price">
-                                                            <p class="price-sale">85,000đ</p>
-                                                            <p class="price-menber">
-                                                                <span>68,000đ</span>
-                                                                <span class="price-menber-info">
-                                                                <span>(Giá của thành viên)</span>
-                                                                <a href="#" title="">(Đăng Ký)</a>
-                                                                </span>
-                                                            </p>
-                                                        </div>
+                                    </div>
+                                    <div class="item" data-merge="2">
+                                        <div class="item-2-pro clearfix">
+                                            <div class="inner">
+                                                <div class="product-r2c">
+                                                    <div class="image">
+                                                        <a href="#" title="">
+                                                            <img class="" src="images/R2C_03.jpg" />
+                                                            <span>Ba chỉ lợn rang</span>
+                                                        </a>
+                                                        <a href="#" title="">
+                                                            <img class="" src="images/R2C_08.jpg" />
+                                                            <span>Canh rau ngót nấu thịt xay</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="people text-center">
+                                                        <span class="active">2 Người</span>
+                                                        <span>2-4 Người</span>
+                                                    </div>
+                                                    <div class="block-button-item">
+                                                        <a href="javascript:;" class="btn-add-cart-icon btn_add_cart"><i class="fa fa-shopping-cart"></i></a>
+                                                        <a href="javascript:;" class="btn-like-icon" data-like="1334"><i class="fa fa-thumbs-up"></i><span class="likes">0</span></a>
+                                                    </div>
+                                                    <h5 class="title"><a href="#" data-toggle="modal" data-target="#myModal">Bữa ăn nhanh gọn 1</a></h5>
+                                                    <div class="price">
+                                                        <p class="price-sale">85,000đ</p>
+                                                        <p class="price-menber">
+                                                            <span>68,000đ</span>
+                                                            <span class="price-menber-info">
+                                                            <span>(Giá của thành viên)</span>
+                                                            <a href="#" title="">(Đăng Ký)</a>
+                                                            </span>
+                                                        </p>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="item" data-merge="3">
-                                            <div class="item-pro">
-                                                <div class="inner">
-                                                    <div class="product-r2c">
-                                                        <div class="image image-3-item">
-                                                            <a href="#" title="">
-                                                                <img class="" src="images/R2C_03.jpg" />
-                                                                <span>Ba chỉ lợn rang</span>
-                                                            </a>
-                                                            <a href="#" title="">
-                                                                <img class="" src="images/R2C_08.jpg" />
-                                                                <span>Canh rau ngót nấu thịt xay</span>
-                                                            </a>
-                                                            <a href="#" title="">
-                                                                <img class="" src="images/R2C_03.jpg" />
-                                                                <span>Canh rau ngót nấu thịt xay</span>
-                                                            </a>
-                                                        </div>
-                                                        <div class="people text-center">
-                                                            <span>2 Người</span>
-                                                            <span>2-4 Người</span>
-                                                        </div>
-                                                        <div class="block-button-item">
-                                                            <a href="javascript:;" class="btn-add-cart-icon btn_add_cart"><i class="fa fa-shopping-cart"></i></a>
-                                                            <a href="javascript:;" class="btn-like-icon" data-like="1334"><i class="fa fa-thumbs-up"></i><span class="likes">0</span></a>
-                                                        </div>
-                                                        <h5 class="title"><a href="#">Bữa ăn nhanh gọn 1</a></h5>
-                                                        <div class="price">
-                                                            <p class="price-sale">85,000đ
-                                                            <p>
-                                                            <p class="price-menber">
-                                                                <span>68,000đ</span>
-                                                                <span class="price-menber-info">
-                                                                <span>(Giá của thành viên)</span>
-                                                                <a href="#" title="">(Đăng Ký)</a>
-                                                                </span>
-                                                            </p>
-                                                        </div>
+                                    </div>
+                                    <div class="item" data-merge="3">
+                                        <div class="item-pro">
+                                            <div class="inner">
+                                                <div class="product-r2c">
+                                                    <div class="image image-3-item">
+                                                        <a href="#" title="">
+                                                            <img class="" src="images/R2C_03.jpg" />
+                                                            <span>Ba chỉ lợn rang</span>
+                                                        </a>
+                                                        <a href="#" title="">
+                                                            <img class="" src="images/R2C_08.jpg" />
+                                                            <span>Canh rau ngót nấu thịt xay</span>
+                                                        </a>
+                                                        <a href="#" title="">
+                                                            <img class="" src="images/R2C_03.jpg" />
+                                                            <span>Canh rau ngót nấu thịt xay</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="people text-center">
+                                                        <span>2 Người</span>
+                                                        <span>2-4 Người</span>
+                                                    </div>
+                                                    <div class="block-button-item">
+                                                        <a href="javascript:;" class="btn-add-cart-icon btn_add_cart"><i class="fa fa-shopping-cart"></i></a>
+                                                        <a href="javascript:;" class="btn-like-icon" data-like="1334"><i class="fa fa-thumbs-up"></i><span class="likes">0</span></a>
+                                                    </div>
+                                                    <h5 class="title"><a href="#">Bữa ăn nhanh gọn 1</a></h5>
+                                                    <div class="price">
+                                                        <p class="price-sale">85,000đ</p>
+                                                        <p class="price-menber">
+                                                            <span>68,000đ</span>
+                                                            <span class="price-menber-info">
+                                                            <span>(Giá của thành viên)</span>
+                                                            <a href="#" title="">(Đăng Ký)</a>
+                                                            </span>
+                                                        </p>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="item" data-merge="2">
-                                            <div class="item-2-pro clearfix">
-                                                <div class="inner">
-                                                    <div class="product-r2c">
-                                                        <div class="image">
-                                                            <a href="#" title="">
-                                                                <img class="" src="images/R2C_03.jpg" />
-                                                                <span>Ba chỉ lợn rang</span>
-                                                            </a>
-                                                            <a href="#" title="">
-                                                                <img class="" src="images/R2C_08.jpg" />
-                                                                <span>Canh rau ngót nấu thịt xay</span>
-                                                            </a>
-                                                        </div>
-                                                        <div class="people text-center">
-                                                            <span class="active">2 Người</span>
-                                                            <span>2-4 Người</span>
-                                                        </div>
-                                                        <div class="block-button-item">
-                                                            <a href="javascript:;" class="btn-add-cart-icon btn_add_cart"><i class="fa fa-shopping-cart"></i></a>
-                                                            <a href="javascript:;" class="btn-like-icon" data-like="1334"><i class="fa fa-thumbs-up"></i><span class="likes">0</span></a>
-                                                        </div>
-                                                        <h5 class="title"><a href="#" data-toggle="modal" data-target="#myModal">Bữa ăn nhanh gọn 1</a></h5>
-                                                        <div class="price">
-                                                            <p class="price-sale">85,000đ</p>
-                                                            <p class="price-menber">
-                                                                <span>68,000đ</span>
-                                                                <span class="price-menber-info">
-                                                                <span>(Giá của thành viên)</span>
-                                                                <a href="#" title="">(Đăng Ký)</a>
-                                                                </span>
-                                                            </p>
-                                                        </div>
+                                    </div>
+                                    <div class="item" data-merge="2">
+                                        <div class="item-2-pro clearfix">
+                                            <div class="inner">
+                                                <div class="product-r2c">
+                                                    <div class="image">
+                                                        <a href="#" title="">
+                                                            <img class="" src="images/R2C_03.jpg" />
+                                                            <span>Ba chỉ lợn rang</span>
+                                                        </a>
+                                                        <a href="#" title="">
+                                                            <img class="" src="images/R2C_08.jpg" />
+                                                            <span>Canh rau ngót nấu thịt xay</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="people text-center">
+                                                        <span class="active">2 Người</span>
+                                                        <span>2-4 Người</span>
+                                                    </div>
+                                                    <div class="block-button-item">
+                                                        <a href="javascript:;" class="btn-add-cart-icon btn_add_cart"><i class="fa fa-shopping-cart"></i></a>
+                                                        <a href="javascript:;" class="btn-like-icon" data-like="1334"><i class="fa fa-thumbs-up"></i><span class="likes">0</span></a>
+                                                    </div>
+                                                    <h5 class="title"><a href="#" data-toggle="modal" data-target="#myModal">Bữa ăn nhanh gọn 1</a></h5>
+                                                    <div class="price">
+                                                        <p class="price-sale">85,000đ</p>
+                                                        <p class="price-menber">
+                                                            <span>68,000đ</span>
+                                                            <span class="price-menber-info">
+                                                            <span>(Giá của thành viên)</span>
+                                                            <a href="#" title="">(Đăng Ký)</a>
+                                                            </span>
+                                                        </p>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="item" data-merge="2">
-                                            <div class="item-2-pro clearfix">
-                                                <div class="inner">
-                                                    <div class="product-r2c">
-                                                        <div class="image">
-                                                            <a href="#" title="">
-                                                                <img class="" src="images/R2C_03.jpg" />
-                                                                <span>Ba chỉ lợn rang</span>
-                                                            </a>
-                                                            <a href="#" title="">
-                                                                <img class="" src="images/R2C_08.jpg" />
-                                                                <span>Canh rau ngót nấu thịt xay</span>
-                                                            </a>
-                                                        </div>
-                                                        <div class="people text-center">
-                                                            <span class="active">2 Người</span>
-                                                            <span>2-4 Người</span>
-                                                        </div>
-                                                        <div class="block-button-item">
-                                                            <a href="javascript:;" class="btn-add-cart-icon btn_add_cart"><i class="fa fa-shopping-cart"></i></a>
-                                                            <a href="javascript:;" class="btn-like-icon" data-like="1334"><i class="fa fa-thumbs-up"></i><span class="likes">0</span></a>
-                                                        </div>
-                                                        <h5 class="title"><a href="#" data-toggle="modal" data-target="#myModal">Bữa ăn nhanh gọn 1</a></h5>
-                                                        <div class="price">
-                                                            <p class="price-sale">85,000đ</p>
-                                                            <p class="price-menber">
-                                                                <span>68,000đ</span>
-                                                                <span class="price-menber-info">
-                                                                <span>(Giá của thành viên)</span>
-                                                                <a href="#" title="">(Đăng Ký)</a>
-                                                                </span>
-                                                            </p>
-                                                        </div>
+                                    </div>
+                                    <div class="item" data-merge="2">
+                                        <div class="item-2-pro clearfix">
+                                            <div class="inner">
+                                                <div class="product-r2c">
+                                                    <div class="image">
+                                                        <a href="#" title="">
+                                                            <img class="" src="images/R2C_03.jpg" />
+                                                            <span>Ba chỉ lợn rang</span>
+                                                        </a>
+                                                        <a href="#" title="">
+                                                            <img class="" src="images/R2C_08.jpg" />
+                                                            <span>Canh rau ngót nấu thịt xay</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="people text-center">
+                                                        <span class="active">2 Người</span>
+                                                        <span>2-4 Người</span>
+                                                    </div>
+                                                    <div class="block-button-item">
+                                                        <a href="javascript:;" class="btn-add-cart-icon btn_add_cart"><i class="fa fa-shopping-cart"></i></a>
+                                                        <a href="javascript:;" class="btn-like-icon" data-like="1334"><i class="fa fa-thumbs-up"></i><span class="likes">0</span></a>
+                                                    </div>
+                                                    <h5 class="title"><a href="#" data-toggle="modal" data-target="#myModal">Bữa ăn nhanh gọn 1</a></h5>
+                                                    <div class="price">
+                                                        <p class="price-sale">85,000đ</p>
+                                                        <p class="price-menber">
+                                                            <span>68,000đ</span>
+                                                            <span class="price-menber-info">
+                                                            <span>(Giá của thành viên)</span>
+                                                            <a href="#" title="">(Đăng Ký)</a>
+                                                            </span>
+                                                        </p>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="item" data-merge="3">
-                                            <div class="item-pro">
-                                                <div class="inner">
-                                                    <div class="product-r2c">
-                                                        <div class="image image-3-item">
-                                                            <a href="#" title="">
-                                                                <img class="" src="images/R2C_03.jpg" />
-                                                                <span>Ba chỉ lợn rang</span>
-                                                            </a>
-                                                            <a href="#" title="">
-                                                                <img class="" src="images/R2C_08.jpg" />
-                                                                <span>Canh rau ngót nấu thịt xay</span>
-                                                            </a>
-                                                            <a href="#" title="">
-                                                                <img class="" src="images/R2C_03.jpg" />
-                                                                <span>Canh rau ngót nấu thịt xay</span>
-                                                            </a>
-                                                        </div>
-                                                        <div class="people text-center">
-                                                            <span>2 Người</span>
-                                                            <span>2-4 Người</span>
-                                                        </div>
-                                                        <div class="block-button-item">
-                                                            <a href="javascript:;" class="btn-add-cart-icon btn_add_cart"><i class="fa fa-shopping-cart"></i></a>
-                                                            <a href="javascript:;" class="btn-like-icon" data-like="1334"><i class="fa fa-thumbs-up"></i><span class="likes">0</span></a>
-                                                        </div>
-                                                        <h5 class="title"><a href="#">Bữa ăn nhanh gọn 1</a></h5>
-                                                        <div class="price">
-                                                            <p class="price-sale">85,000đ
-                                                            <p>
-                                                            <p class="price-menber">
-                                                                <span>68,000đ</span>
-                                                                <span class="price-menber-info">
-                                                                <span>(Giá của thành viên)</span>
-                                                                <a href="#" title="">(Đăng Ký)</a>
-                                                                </span>
-                                                            </p>
-                                                        </div>
+                                    </div>
+                                    <div class="item" data-merge="3">
+                                        <div class="item-pro">
+                                            <div class="inner">
+                                                <div class="product-r2c">
+                                                    <div class="image image-3-item">
+                                                        <a href="#" title="">
+                                                            <img class="" src="images/R2C_03.jpg" />
+                                                            <span>Ba chỉ lợn rang</span>
+                                                        </a>
+                                                        <a href="#" title="">
+                                                            <img class="" src="images/R2C_08.jpg" />
+                                                            <span>Canh rau ngót nấu thịt xay</span>
+                                                        </a>
+                                                        <a href="#" title="">
+                                                            <img class="" src="images/R2C_03.jpg" />
+                                                            <span>Canh rau ngót nấu thịt xay</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="people text-center">
+                                                        <span>2 Người</span>
+                                                        <span>2-4 Người</span>
+                                                    </div>
+                                                    <div class="block-button-item">
+                                                        <a href="javascript:;" class="btn-add-cart-icon btn_add_cart"><i class="fa fa-shopping-cart"></i></a>
+                                                        <a href="javascript:;" class="btn-like-icon" data-like="1334"><i class="fa fa-thumbs-up"></i><span class="likes">0</span></a>
+                                                    </div>
+                                                    <h5 class="title"><a href="#">Bữa ăn nhanh gọn 1</a></h5>
+                                                    <div class="price">
+                                                        <p class="price-sale">85,000đ</p>
+                                                        <p class="price-menber">
+                                                            <span>68,000đ</span>
+                                                            <span class="price-menber-info">
+                                                            <span>(Giá của thành viên)</span>
+                                                            <a href="#" title="">(Đăng Ký)</a>
+                                                            </span>
+                                                        </p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -877,19 +876,19 @@
                 <div class="block block-intro">
                     <div class="container">
                         <div class="row">
-                            <div class="col-sm-3">
+                            <div class="col-sm-3 col-xs-6">
                                 <img src="images/1.jpg" alt="">
                                 <span>Lên thực đơn,<br>Chọn nguyên liệu an toàn</span>
                             </div>
-                            <div class="col-sm-3">
+                            <div class="col-sm-3 col-xs-6">
                                 <img src="images/2.jpg" alt="">
                                 <span>Nguyên liệu sơ chế kỹ càng,<br>kèm công thức</span>
                             </div>
-                            <div class="col-sm-3">
+                            <div class="col-sm-3 col-xs-6">
                                 <img src="images/3.jpg" alt="">
                                 <span>Đóng gói và giao đến tận nhà</span>
                             </div>
-                            <div class="col-sm-3">
+                            <div class="col-sm-3 col-xs-6">
                                 <img src="images/4.jpg" alt="">
                                 <span>Nhận yêu cầu món ăn từ bạn</span>
                             </div>
