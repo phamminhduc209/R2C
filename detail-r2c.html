@@ -409,9 +409,9 @@
                                 <div class="block-title"><h2 class="fs18">CÁC BỮA ĂN GỢI Ý</h2></div>
                                 <div class="block-content block-product-r2c">
                                     <div class="block-slides">
-                                        <div class="owl-carousel" data-nav="true" data-margin="0" data-items='5' data-autoplayTimeout="700" data-autoplay="false" data-loop="true" data-responsive='{"678":{"mergeFit":true},"1000":{"mergeFit":false}}'>
-                                            <div class="item" data-merge="2">
-                                                <div class="item-2-pro clearfix">
+                                        <div class="owl-carousel" data-nav="true" data-margin="0" data-autoplayTimeout="700" data-autoplay="false" data-loop="true" data-responsive='{"0":{"items":1},"480":{"items":1},"600":{"items":1},"768":{"items":1},"800":{"items":2},"992":{"items":2}}'>
+                                            <div class="item">
+                                                <div class="item-pro clearfix">
                                                     <div class="inner">
                                                         <div class="product-r2c">
                                                             <div class="image">
@@ -447,7 +447,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="item" data-merge="3">
+                                            <div class="item">
                                                 <div class="item-pro">
                                                     <div class="inner">
                                                         <div class="product-r2c">
@@ -475,8 +475,7 @@
                                                             </div>
                                                             <h5 class="title"><a href="#">Bữa ăn nhanh gọn 1</a></h5>
                                                             <div class="price">
-                                                                <p class="price-sale">85,000đ
-                                                                <p>
+                                                                <p class="price-sale">85,000đ</p>
                                                                 <p class="price-menber">
                                                                     <span>68,000đ</span>
                                                                     <span class="price-menber-info">
@@ -489,7 +488,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="item" data-merge="3">
+                                            <div class="item">
                                                 <div class="item-pro">
                                                     <div class="inner">
                                                         <div class="product-r2c">
@@ -517,8 +516,7 @@
                                                             </div>
                                                             <h5 class="title"><a href="#">Bữa ăn nhanh gọn 1</a></h5>
                                                             <div class="price">
-                                                                <p class="price-sale">85,000đ
-                                                                <p>
+                                                                <p class="price-sale">85,000đ</p>
                                                                 <p class="price-menber">
                                                                     <span>68,000đ</span>
                                                                     <span class="price-menber-info">
@@ -531,8 +529,8 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="item" data-merge="2">
-                                                <div class="item-2-pro clearfix">
+                                            <div class="item">
+                                                <div class="item-pro clearfix">
                                                     <div class="inner">
                                                         <div class="product-r2c">
                                                             <div class="image">
@@ -568,8 +566,8 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="item" data-merge="2">
-                                                <div class="item-2-pro clearfix">
+                                            <div class="item">
+                                                <div class="item-pro clearfix">
                                                     <div class="inner">
                                                         <div class="product-r2c">
                                                             <div class="image">
@@ -605,7 +603,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="item" data-merge="3">
+                                            <div class="item">
                                                 <div class="item-pro">
                                                     <div class="inner">
                                                         <div class="product-r2c">
@@ -633,8 +631,7 @@
                                                             </div>
                                                             <h5 class="title"><a href="#">Bữa ăn nhanh gọn 1</a></h5>
                                                             <div class="price">
-                                                                <p class="price-sale">85,000đ
-                                                                <p>
+                                                                <p class="price-sale">85,000đ</p>
                                                                 <p class="price-menber">
                                                                     <span>68,000đ</span>
                                                                     <span class="price-menber-info">
@@ -647,7 +644,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="item" data-merge="3">
+                                            <div class="item">
                                                 <div class="item-pro">
                                                     <div class="inner">
                                                         <div class="product-r2c">
@@ -675,8 +672,7 @@
                                                             </div>
                                                             <h5 class="title"><a href="#">Bữa ăn nhanh gọn 1</a></h5>
                                                             <div class="price">
-                                                                <p class="price-sale">85,000đ
-                                                                <p>
+                                                                <p class="price-sale">85,000đ</p>
                                                                 <p class="price-menber">
                                                                     <span>68,000đ</span>
                                                                     <span class="price-menber-info">
@@ -1539,6 +1535,9 @@
                 $(function() {
                     $('.block-static-block-homepage .block-item .description').matchHeight(false);
                 });
+                $(function() {
+                    $('.product-r2c .image span').matchHeight(false);
+                });
             </script>
             <script type="text/javascript">
                 $(document).ready(function(){
@@ -1916,27 +1915,27 @@
             }
             .loading_box {
             position: relative;
-                            }
-                            .loading_animation {
-                            position: absolute;
-                            top: 50%;
-                            left: 50%;
-                            margin: 0;
-                            transform: translate(-50%, -50%);
-                            width: 290px;
-                            height: 350px;
-                            color: #fff;
-                            text-align: center;
-                            display: block;
-                            padding: 0;
-                            border-radius: 5px;
-                            }
-                        </style>
-                        <script type="text/javascript">
-                            $(document).ready(function(){
-                                $("img.lazyload").lazyload();
-                            });
-                        </script>
-                        <input type="hidden" id="is_clear_fp" value="0">
-                    </body>
-                </html>
+            }
+            .loading_animation {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: 0;
+            transform: translate(-50%, -50%);
+            width: 290px;
+            height: 350px;
+            color: #fff;
+            text-align: center;
+            display: block;
+            padding: 0;
+            border-radius: 5px;
+            }
+        </style>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $("img.lazyload").lazyload();
+            });
+        </script>
+        <input type="hidden" id="is_clear_fp" value="0">
+    </body>
+</html>

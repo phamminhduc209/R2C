@@ -4491,8 +4491,6 @@ h1.title-main {
 .product-r2c .image-3-item a {
   max-width: 33%;
   flex: 1 1 33%;
-  text-align: center;
-  border-right: 3px solid #06b7a4;
 }
 .block-product-r2c .image a img {
   width: 120px;
