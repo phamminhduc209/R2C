@@ -1334,6 +1334,12 @@
     .add-to-cart--form .cart-inner .cart-total {
         font-size: var(--text-md);
     }
+    .add-to-cart--form .cart-inner .cart-items .cart-header .pc {
+        display: none;
+    }
+    .add-to-cart--form .cart-inner .cart-items .cart-header .sp {
+        display: inline-block;
+    }
     .add-to-cart--form .cart-inner .cart-items .cart-header h2 {
         display: inline-block;
         padding: 5px 20px 5px 5px;
@@ -1769,7 +1775,13 @@
     .product-r2c .price .price-sale {
         padding-top: 10px;
     }
-    .add-to-cart--form .cart-inner .cart-items {display: flex; justify-content: space-around;}
+    .add-to-cart--form .cart-inner .cart-items {
+        display: flex;
+        justify-content: space-around;
+    }
+    .add-to-cart--form .cart-inner .cart-items .cart .cart-main {
+        display: block !important;
+    }
 }
 
 @media (min-width: 992px) {

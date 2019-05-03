@@ -159,9 +159,9 @@
   //   $(this).parent('.cart').find('.cart-main').toggleClass('active');
   // });
 
-  $('.cart-header').on('click', function() {
-    $(this).parent('.cart').find('.cart-main').slideToggle();
-    $(this).parent('.cart').siblings().find('.cart-main').slideUp();
+  $('.cart-header .sp').on('click', function() {
+    $(this).parents('.cart').find('.cart-main').slideToggle();
+    $(this).parents('.cart').siblings().find('.cart-main').slideUp();
   });
 
 })(jQuery); // End of use strict
