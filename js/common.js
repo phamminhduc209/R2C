@@ -155,6 +155,15 @@
     console.log('clicked!');
   })
 
+  // $('.cart-header').on('click', function() {
+  //   $(this).parent('.cart').find('.cart-main').toggleClass('active');
+  // });
+
+  $('.cart-header').on('click', function() {
+    $(this).parent('.cart').find('.cart-main').slideToggle();
+    $(this).parent('.cart').siblings().find('.cart-main').slideUp();
+  });
+
 })(jQuery); // End of use strict
 $(document).ready(function(){
    $('.btn-addcart-product').click(function(){
