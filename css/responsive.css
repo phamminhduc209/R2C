@@ -1,16 +1,19 @@
 /*------------------------------------------------------------------
 [Table of contents]
 1.  Styles for devices max 1200px
-2.  Styles for devices max 1024px
-3.  Styles for devices max 991px
-4.  Styles for devices max 800px
-5.  Styles for devices max 768px
-6.  Styles for devices max 767px
-7.  Styles for devices max 600px
-8.  Styles for devices max 560px
-9.  Styles for devices max 375px
-10. Styles for devices max 320px
-11. Responsive Five Columm
+2.  Styles for devices max 1200px and min 1024px
+3.  Styles for devices max 1024px
+4.  Styles for devices max 991px
+5.  Styles for devices max 800px
+6.  Styles for devices max 768px
+7.  Styles for devices min 768px and max 1023px
+8.  Styles for devices max 767px
+9.  Styles for devices max 600px
+10. Styles for devices max 568px
+11. Styles for devices max 560px
+12. Styles for devices max 375px
+13. Styles for devices max 320px
+14. Responsive Five Columm
 
 ------------------------*/
 
@@ -530,6 +533,16 @@
 
 
 /*----------------
+[Styles for devices max 1200px and min 1024px
+*/
+
+@media (min-width: 991px) and (max-width: 1200px) {
+    .product-r2c .price .price-menber {
+        margin-left: 10px;
+    }
+}
+
+/*----------------
 [Styles for devices max 991px
 */
 
@@ -922,6 +935,17 @@
         opacity: 1;
         -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
         transition: opacity 0.35s, transform 0.35s;
+    }
+}
+
+
+/*----------------
+[Styles for devices min 768px and max 1023px
+*/
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .block-product-r2c .block-product-r2c-item {
+        width: 50%;
     }
 }
 
@@ -1363,6 +1387,12 @@
     }
 }
 
+@media (min-width: 667px) {
+    .product-r2c .price {
+        justify-content: flex-end;
+    }
+}
+
 
 /*----------------
 [Styles for devices max 600px
@@ -1441,6 +1471,14 @@
     }
 }
 
+/*----------------
+[Styles for devices max 568px
+*/
+@media (max-width: 568px) {
+    .block-product-r2c .block-product-r2c-item {
+        width: 100%;
+    }
+}
 
 /*----------------
 [Styles for devices max 560px
@@ -1526,6 +1564,9 @@
     .product-list .product-item {
         margin-left: 0;
         display: block;
+    }
+    .block-product-r2c .block-product-r2c-item {
+        width: 100%;
     }
 }
 
@@ -1771,9 +1812,6 @@
     .col-sm-5ths {
         width: 20%;
         float: left;
-    }
-    .product-r2c .price .price-sale {
-        padding-top: 10px;
     }
     .add-to-cart--form .cart-inner .cart-items {
         display: flex;
