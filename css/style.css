@@ -4649,3 +4649,95 @@ h1.title-main {
   color: #06b7a4;
   content: "/";
 }
+
+.block-links-new ul {
+  justify-content: center;
+  margin: 0
+}
+.block-links-new .menu-r2c ul li {
+  width: auto;
+  padding: 0 20px;
+}
+.block-links-new .menu-r2c ul li a {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.block-cate-new {
+  margin: 30px 0;
+}
+.block-cate-new .item {
+  padding: 0 20px;
+}
+
+.block-benefit .row .items {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.block-benefit .row .items .item {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.block-benefit .row .items .moreitem a:last-child {
+  margin-top: auto;
+}
+
+.card-profile {
+  display: inline-block;
+  position: relative;
+  margin: 70px 5px 30px;
+  border-radius: 6px;
+  color: rgba(0, 0, 0, 0.87);
+  background: #fff;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  text-align: center;
+}
+.card-profile .card-avatar {
+  max-width: 130px;
+  max-height: 130px;
+  margin: -50px auto 0;
+  border-radius: 50%;
+  border: 5px solid #53c8e7;
+  overflow: hidden;
+  box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+.card-profile .card-avatar img {
+  width: 100%;
+  height: auto;
+}
+.card-profile .card-info {
+  padding: 15px 30px;
+}
+.card-profile .card-location {
+  font-size: 12px;
+  color: #383738;
+}
+.card-profile .card-location i {
+  font-size: 14px;
+  color: #53c8e7;
+}
+.card-profile .card-description {
+  position: relative;
+  line-height: 1.4;
+	text-rendering: optimizeLegibility;
+	font-smoothing: antialiased;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-fon-smoothing: grayscale;
+}
+.card-profile .card-description:first-of-type:before,
+.card-profile .card-description:last-of-type:after {
+  font-size: 40px;
+	width: 10px;
+	height: 10px;
+  position: absolute;
+}
+.card-profile .card-description:first-of-type:before {
+	content: "“";
+	top: -12px;
+	left: -5px;
+}
+.card-profile .card-description:last-of-type:after {
+	content: "”";
+	bottom: 20px;
+}
