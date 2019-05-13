@@ -4649,7 +4649,9 @@ h1.title-main {
   color: #06b7a4;
   content: "/";
 }
-
+.block-links-new {
+  margin-bottom: 30px;
+}
 .block-links-new ul {
   justify-content: center;
   margin: 0
@@ -4662,14 +4664,15 @@ h1.title-main {
   font-size: 18px;
   text-transform: uppercase;
 }
-
 .block-cate-new {
-  margin: 30px 0;
+  margin-bottom: 50px;
 }
 .block-cate-new .item {
   padding: 0 20px;
 }
-
+.block-benefit {
+  margin-bottom: 30px
+}
 .block-benefit .row .items {
   padding-right: 15px;
   padding-left: 15px;
@@ -4682,7 +4685,17 @@ h1.title-main {
 .block-benefit .row .items .moreitem a:last-child {
   margin-top: auto;
 }
-
+.block-customer-new {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.block-customer-new-title {
+  color: #06B7A4;
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
 .card-profile {
   display: inline-block;
   position: relative;
@@ -4698,7 +4711,7 @@ h1.title-main {
   max-height: 130px;
   margin: -50px auto 0;
   border-radius: 50%;
-  border: 5px solid #53c8e7;
+  border: 5px solid #06B7A4;
   overflow: hidden;
   box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
 }
@@ -4715,7 +4728,7 @@ h1.title-main {
 }
 .card-profile .card-location i {
   font-size: 14px;
-  color: #53c8e7;
+  color: #06B7A4;
 }
 .card-profile .card-description {
   position: relative;
