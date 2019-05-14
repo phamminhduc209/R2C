@@ -947,6 +947,9 @@
     .block-product-r2c .block-product-r2c-item {
         width: 50%;
     }
+    .header-r2c .header-toolbox ul li {
+        margin: 0;
+    }
 }
 
 

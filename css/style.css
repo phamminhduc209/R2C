@@ -4355,7 +4355,7 @@ h1.title-main {
   padding: 20px 0;
 }
 .header-r2c .header-logo #logo {
-  width: 70%;
+  width: 50%;
 }
 .search-r2c .input-group-addon {
   background-color: #ddeef3;
@@ -4679,7 +4679,6 @@ h1.title-main {
 }
 .block-links-new .menu-r2c ul li {
   width: auto;
-  padding: 0 20px;
 }
 .block-links-new .menu-r2c ul li a {
   font-size: 18px;
