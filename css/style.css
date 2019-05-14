@@ -4364,6 +4364,24 @@ h1.title-main {
   background: transparent;
   border: none;
 }
+.header-r2c .user-section {
+  position: relative;
+}
+.header-r2c .user-section p {
+  color: #FFF;
+}
+.header-r2c .user-section .customer-account {
+  width: 300px;
+  left: 0;
+  z-index: 2;
+}
+.header-r2c .user-section .customer-account li {
+  width: 100%;
+  margin: 0;
+}
+.header-r2c .user-section .customer-account li a:hover {
+  color: var(--primary-color);
+}
 .menu-r2c ul {
   display: flex;
   align-items: center;
