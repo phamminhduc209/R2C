@@ -4354,6 +4354,9 @@ h1.title-main {
   background: #06b7a4;
   padding: 20px 0;
 }
+.header-r2c .header-logo #logo {
+  width: 70%;
+}
 .search-r2c .input-group-addon {
   background-color: #ddeef3;
 }
