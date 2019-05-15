@@ -19,10 +19,10 @@
   ========================================================================== */
 /*  Css */
 
-@import url(https://enb.vn/public/site/lib/bootstrap/bootstrap.min.css);
-@import url(../lib/fontawesome/font-awesome.min.css);
-@import url(https://enb.vn/public/site/lib/carousel/owl.carousel.min.css);
-@import url(https://enb.vn/public/site/lib/flexslider/flexslider.css);
+@import url(../lib/bootstrap/bootstrap.min.css);
+@import url(../lib/font-awesome/font-awesome.min.css);
+@import url(../lib/carousel/owl.carousel.min.css);
+@import url(../lib/flexslider/flexslider.css);
 @import url(custom.css);
 /* Fonts */
 @import url('https://fonts.googleapis.com/css?family=Nunito:300,400,600,700&subset=vietnamese');
@@ -462,6 +462,7 @@ font-weight: 700;
 .product-price span { color: var(--color-2); font-size: 12px; }
 
 /* ================ Form ================ */
+.form-group {}
 .form-control {
   height: 40px;
   border-radius: var(--border-radius-size);
@@ -477,6 +478,15 @@ font-weight: 700;
 .form-control.input-lg {
   height: 50px;
 }
+
+
+
+
+
+
+
+
+
 
 .clearfix {
   clear: both;
@@ -4352,10 +4362,10 @@ h1.title-main {
 /* R2C */
 .header-r2c .header-r2c-top {
   background: #06b7a4;
-  padding: 20px 0;
+  padding: 10px 0;
 }
 .header-r2c .header-logo #logo {
-  width: 70%;
+  width: 90px;
 }
 .search-r2c .input-group-addon {
   background-color: #ddeef3;
@@ -4364,10 +4374,28 @@ h1.title-main {
   background: transparent;
   border: none;
 }
+.header-r2c .user-section {
+  position: relative;
+}
+.header-r2c .user-section p {
+  color: #FFF;
+}
+.header-r2c .user-section .customer-account {
+  width: 300px;
+  left: 0;
+  z-index: 2;
+}
+.header-r2c .user-section .customer-account li {
+  width: 100%;
+  margin: 0;
+}
+.header-r2c .user-section .customer-account li a:hover {
+  color: var(--primary-color);
+}
 .menu-r2c ul {
   display: flex;
   align-items: center;
-  margin: 15px 0;
+  margin: 5px 0;
 }
 .menu-r2c ul li {
   padding: 10px 20px;
@@ -4430,16 +4458,16 @@ h1.title-main {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
+  height: 250px;
 }
 .block-about-r2c .r2c-img img {
   width: auto;
-  height: 350px;
+  height: 250px;
 }
 .block-about-r2c .r2c-video .inner {
   display: flex;
   width: 100%;
-  height: 100%;
-  border: 3px solid #ED3429;
+  height: 100%;  
 }
 .block-about-r2c .r2c-video iframe {
   width: 100%;
@@ -4447,7 +4475,7 @@ h1.title-main {
 }
 .block-product-r2c .block-title-r2c h2 {
   color: var(--heading-color);
-  border-bottom: 5px solid var(--heading-color);
+  border-bottom: 1px solid var(--heading-color);
   padding-bottom: 10px;
 }
 .title-r2c a {
@@ -4469,8 +4497,7 @@ h1.title-main {
   margin-left: 5px;
 }
 
-.block-product-r2c .item {
-  background: #edf7f9;
+.block-product-r2c .item {  
   padding: 15px;
 }
 .block-product-r2c .inner {
@@ -4482,8 +4509,7 @@ h1.title-main {
   text-align: center;
 }
 .block-product-r2c .image a img {
-  width: 120px;
-  height: 120px;
+  width: 100%;
   margin: 0 auto;
   display: block;
 }
@@ -4510,7 +4536,7 @@ h1.title-main {
   color: #FFF;
 }
 .product-r2c .block-button-item {
-  border-bottom: 3px solid var(--heading-color);
+  border-bottom: 1px solid #d8d8d8;
   margin: 0 0 10px;
   padding-top: 0;
 }
@@ -4525,6 +4551,10 @@ h1.title-main {
   display: block;
   line-height: 1.3;
   color: #333;
+  font-size: 15px;
+}
+.product-r2c .title a:hover{
+  color: var(--primary-color)
 }
 .product-r2c .price {
   display: flex;
@@ -4534,26 +4564,33 @@ h1.title-main {
 }
 .product-r2c .price .price-sale,
 .product-r2c .price .price-menber {
-  font-size: 15px;
+  font-size: 14px;
   color: #ea0000;
   word-break: normal;
   margin-bottom: 0;
+}
+.product-r2c .price .price-sale{
+  font-weight: 700;
+  font-size: 15px;
 }
 .product-r2c .price .price-menber {
   color: var(--heading-color);
   display: flex;
   align-items: center;
-  margin-left: 15px;
+  margin-left: 12px;
 }
 .product-r2c .price .price-menber .price-menber-info {
-  font-size: 10px;
+  font-size: 12px;
   margin-left: 10px;
 }
 .product-r2c .price .price-menber .price-menber-info > * {
   display: block;
   color: var(--heading-color);
 }
-
+a.text-dk{
+  display: block;
+  text-align: center;
+}
 .block-intro {
   position: relative;
 }
@@ -4661,17 +4698,13 @@ h1.title-main {
 }
 .block-links-new .menu-r2c ul li {
   width: auto;
-  padding: 0 20px;
 }
 .block-links-new .menu-r2c ul li a {
   font-size: 18px;
   text-transform: uppercase;
 }
 .block-cate-new {
-  margin-bottom: 50px;
-}
-.block-cate-new .item {
-  padding: 0 20px;
+  margin-bottom: 60px;
 }
 .block-benefit {
   margin-bottom: 30px
@@ -4687,6 +4720,12 @@ h1.title-main {
 }
 .block-benefit .row .items .moreitem a:last-child {
   margin-top: auto;
+}
+.moreitem{
+  padding-left: 35px;
+}
+.moreitem img{
+  width: 100%
 }
 .block-customer-new {
   margin-top: 40px;
@@ -4736,24 +4775,27 @@ h1.title-main {
 .card-profile .card-description {
   position: relative;
   line-height: 1.4;
-	text-rendering: optimizeLegibility;
-	font-smoothing: antialiased;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-fon-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-fon-smoothing: grayscale;
 }
 .card-profile .card-description:first-of-type:before,
 .card-profile .card-description:last-of-type:after {
   font-size: 40px;
-	width: 10px;
-	height: 10px;
+  width: 10px;
+  height: 10px;
   position: absolute;
 }
 .card-profile .card-description:first-of-type:before {
-	content: "“";
-	top: -12px;
-	left: -5px;
+  content: "“";
+  top: -12px;
+  left: -5px;
 }
 .card-profile .card-description:last-of-type:after {
-	content: "”";
-	bottom: 20px;
+  content: "”";
+  bottom: 20px;
+}
+.title-r2c{
+  text-transform: uppercase;
 }

@@ -1329,10 +1329,15 @@
     .block-about-r2c .r2c-img {
         margin-bottom: 15px;
     }
+
     .block-about-r2c .r2c-img, .block-about-r2c .r2c-video {
         -ms-flex: 0 0 100%;
         flex: 0 0 100%;
         max-width: 100%;
+        height: auto;
+    }
+    .block-about-r2c{
+        margin-top: 40px !important;
     }
     .block-product-r2c .block-title-r2c h2 {
         font-size: var(--text-md);
@@ -1384,6 +1389,15 @@
     }
     .block-benefit .row .items .moreitem a:last-child {
         margin-top: 20px;
+    }
+    .moreitem{
+        padding-left: 0px;
+    }
+    .dnrt-banner{
+        text-align: center;
+    }
+    .block-cate-new .item img{
+        width: 100% !important;
     }
 }
 
