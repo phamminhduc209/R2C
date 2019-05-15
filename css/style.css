@@ -19,13 +19,26 @@
   ========================================================================== */
 /*  Css */
 
-@import url(../lib/bootstrap/bootstrap.min.css);
-@import url(../lib/font-awesome/font-awesome.min.css);
-@import url(../lib/carousel/owl.carousel.min.css);
-@import url(../lib/flexslider/flexslider.css);
+@import url(https://enb.vn/public/site/lib/bootstrap/bootstrap.min.css);
+@import url(../lib/fontawesome/font-awesome.min.css);
+@import url(https://enb.vn/public/site/lib/carousel/owl.carousel.min.css);
+@import url(https://enb.vn/public/site/lib/flexslider/flexslider.css);
 @import url(custom.css);
 /* Fonts */
 @import url('https://fonts.googleapis.com/css?family=Nunito:300,400,600,700&subset=vietnamese');
+
+@font-face {
+  font-family: 'Sofia Pro';
+  src: url('../fonts/SofiaProLight.eot');
+  src: url('../fonts/SofiaProLight.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/SofiaProLight.woff2') format('woff2'),
+      url('../fonts/SofiaProLight.woff') format('woff'),
+      url('../fonts/SofiaProLight.ttf') format('truetype'),
+      url('../fonts/SofiaProLight.svg#SofiaProLight') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+
 
 /* Layout Style
   ========================================================================== */
@@ -105,7 +118,8 @@ body {
   background-color: var(--white-color);
   color: var(--base-color);
   font-size: var(--text-base-size);
-  font-family: 'Nunito', sans-serif;
+  /* font-family: 'Nunito', sans-serif; */
+  font-family: 'Sofia Pro', sans-serif;
   font-style: normal;
   font-weight: normal;
   overflow-x: hidden;
@@ -4360,6 +4374,20 @@ h1.title-main {
 
 
 /* R2C */
+.header-r2c.fixed {
+  background-color: #FFF;
+  border-bottom: 1px solid #06b7a4;
+  position: fixed!important;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 999;
+  padding: 0;
+  -webkit-animation-duration: 0.8s;
+  -moz-animation-duration: 0.8s;
+  -o-animation-duration: 0.8s;
+  animation-duration: 0.8s;
+}
 .header-r2c .header-r2c-top {
   background: #06b7a4;
   padding: 10px 0;
@@ -4396,6 +4424,9 @@ h1.title-main {
   display: flex;
   align-items: center;
   margin: 5px 0;
+}
+.header-r2c.fixed .menu-r2c ul {
+  margin: 0;
 }
 .menu-r2c ul li {
   padding: 10px 20px;
@@ -4539,6 +4570,12 @@ h1.title-main {
   border-bottom: 1px solid #d8d8d8;
   margin: 0 0 10px;
   padding-top: 0;
+}
+.product-r2c .block-button-item a:hover,
+.product-r2c .block-button-item a:focus {
+  background-color: #111;
+  color: #fff;
+  border-color: #111;
 }
 .product-r2c .title {
   display: block;
