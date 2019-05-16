@@ -13,6 +13,18 @@
     "use strict";
   /* ==================================================== */
 
+  $('.header-toolbox .cart ').on('click', function() {
+    $(this).addClass('active');
+    $('body').addClass('Rightsidebar');
+    $('#showSidebar_Card').addClass('active');
+  })
+
+  $('.block-rightSidebar .block-title .iconClose, .sidebar-overlay').on('click', function() {
+    $('showRightsidebar').removeClass('active');
+    $('body').removeClass('Rightsidebar');
+    $('.block-rightSidebar').removeClass('active');
+  })
+
   /*
    * 1. Slide Carousel
   */
@@ -108,10 +120,10 @@
       }
   });
 
-    function validateEmail(email) {
-      var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-      return re.test(email);
-    }
+  function validateEmail(email) {
+    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(email);
+  }
   /*
    * 2. Scroll to Top
   */
@@ -133,31 +145,11 @@
   */
   $('.fixed').sticky({ topSpacing: 0 });
 
-  /*
-   * 7. Main Menu
-  */
-  // $(".mb-nav-bars").on( 'click', function() {
-  //   $(".nav-toogle").toggleClass('has-open');
-  //   $(".menu").toggleClass("has-open");
-  //   $("body").toggleClass("menu-open");
-  // }); 
-  
-  // $(document).ready(function(){
-  //   $('.menu ul li.parent').append('<span class="plus"></span>');
-  //   $('.menu ul li.parent .plus').click(function(){
-  //     $(this).toggleClass('open').siblings('.submenu').slideToggle();
-  //   });
-  // });
-
   // Click show user info login
   $('.user-section-header a').on('click', function() {
     $(this).parent().toggleClass('active');
     console.log('clicked!');
   })
-
-  // $('.cart-header').on('click', function() {
-  //   $(this).parent('.cart').find('.cart-main').toggleClass('active');
-  // });
 
   $('.cart-header .sp').on('click', function() {
     $(this).parents('.cart').find('.cart-main').slideToggle();
