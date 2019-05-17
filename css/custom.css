@@ -5122,9 +5122,47 @@ body.modal-open { padding-right: 12px!important; }
   margin-right: 5px;
   color: #06b7a4;
 }
+.log_menber .txt_choose {
+  margin-left: 28px;
+}
+.log_menber .title {
+  font-size: 20px;
+  color: var(--primary-color);
+  border-bottom: 1px solid var(--primary-color);
+  margin-bottom: 15px;
+  display: inline-block;
+}
 .log_menber .item .inner {
   background: #FFF;
   border: 2px solid var(--primary-color);
-  padding: 20px;
+  padding: 15px;
   text-align: center;
+}
+.log_menber .item .inner .desc {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 2px solid var(--primary-color);
+  color: var(--primary-color);
+}
+.log_menber .item .inner .desc p {
+  margin-bottom: 0;
+}
+.log_menber .item .inner .desc .price {
+  color: var(--secondary-color);
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+.log_menber .item .inner .btn {
+  margin-top: 15px;
+  display: block;
+}
+
+@media (max-width: 767px) {
+  .log_menber .item .inner {
+    margin-bottom: 15px;
+  }
+  .log_menber .item:last-child .inner {
+    margin-bottom: 0;
+  }
 }

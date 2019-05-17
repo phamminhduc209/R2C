@@ -4374,7 +4374,7 @@ h1.title-main {
 .sticky-wrapper .header-r2c {
   background-color: #FFF;
   border-bottom: 1px solid #06b7a4;
-  z-index: 9;
+  z-index: 999;
 }
 .header-r2c .header-r2c-top {
   background: #06b7a4;
