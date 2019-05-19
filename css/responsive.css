@@ -1486,6 +1486,9 @@
 */
 
 @media (max-width: 560px) {
+    .block-links-new .menu-r2c ul li{
+        padding: 18px;
+    }
     .content-pad {
         padding: 0px 0px;
     }
