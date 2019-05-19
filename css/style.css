@@ -4441,6 +4441,9 @@ h1.title-main {
   transform: translate(0, -50%);
   right: 0;
 }
+.menu-r2c ul li:last-child:before {
+  display: none;
+}
 .menu-r2c ul li:after {
   content: "";
   position: absolute;
@@ -4581,6 +4584,9 @@ h1.title-main {
   background-color: #111;
   color: #fff;
   border-color: #111;
+}
+.product-r2c .block-button-item a i {
+  line-height: 30px;
 }
 .product-r2c .title {
   display: block;

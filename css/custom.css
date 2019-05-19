@@ -5132,6 +5132,9 @@ body.modal-open { padding-right: 12px!important; }
   margin-bottom: 15px;
   display: inline-block;
 }
+.log_menber .items {
+  margin-bottom: 15px;
+}
 .log_menber .item .inner {
   background: #FFF;
   border: 2px solid var(--primary-color);
@@ -5156,6 +5159,9 @@ body.modal-open { padding-right: 12px!important; }
 .log_menber .item .inner .btn {
   margin-top: 15px;
   display: block;
+}
+.add-to-cart--form #giohang .cartfix {
+  position: relative;
 }
 
 @media (max-width: 767px) {
