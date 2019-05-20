@@ -25,6 +25,14 @@
     $('.block-rightSidebar').removeClass('active');
   })
 
+  function HeightFooter(){
+    var x = $('#sticky-wrapper').height();
+    $('.block-rightSidebar .sidebar-content').css('padding-top', x);
+  }
+  $(window).on('load resize', function(){
+    HeightFooter()
+  });
+
   /*
    * 1. Slide Carousel
   */

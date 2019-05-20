@@ -4374,11 +4374,13 @@ h1.title-main {
 .sticky-wrapper .header-r2c {
   background-color: #FFF;
   border-bottom: 1px solid #06b7a4;
-  z-index: 999;
+  /* z-index: 99 !important; */
 }
 .header-r2c .header-r2c-top {
   background: #06b7a4;
   padding: 10px 0;
+  z-index: 99;
+  position: relative;
 }
 .header-r2c .header-logo #logo {
   width: 90px;
@@ -4410,6 +4412,10 @@ h1.title-main {
 }
 .payment .header-r2c .header-toolbox ul li:last-child {
   display: none;
+}
+.payment .sticky-wrapper {
+   z-index: 9; 
+   position: relative; 
 }
 .menu-r2c ul {
   display: flex;
@@ -4862,13 +4868,14 @@ body.Rightsidebar {
   width: 320px;
   top: 0;
   bottom: 0;
-  z-index: 99;
+  z-index: 2;
   overflow-y: auto;
   opacity: 1;
   visibility: visible;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
+  box-shadow: -3px 0 20px rgba(0,0,0,0.15);
 }
 .block-rightSidebar.active {
   visibility: visible;
@@ -4880,16 +4887,17 @@ body.Rightsidebar {
 }
 .block-rightSidebar.active .sidebar-content {
   height: 100%;
-  overflow-y: scroll;
-  padding-bottom: 50px;height: 100%;
-  overflow-y: scroll;
-  padding-bottom: 50px;
+  overflow-y: visible;
+  position: relative;
 }
 .block-rightSidebar .block-title {
   padding: 10px;
   text-align: left;
   position: relative;
   border-bottom: 1px solid #ccc;
+  position: absolute;
+  top: 75px;
+  width: 100%;
 }
 .block-rightSidebar .block-title h2 {
   font-size: 14px;
@@ -4926,6 +4934,10 @@ body.Rightsidebar {
   stroke-width: 0;
   stroke: #333;
   fill: #333;
+}
+.block-rightSidebar .shop-cart-sidebar {
+  overflow-y: scroll;
+  height: calc(100vh - 360px);
 }
 .Rightsidebar .sidebar-overlay {
   display: block;
