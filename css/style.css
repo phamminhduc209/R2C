@@ -4374,7 +4374,9 @@ h1.title-main {
 .sticky-wrapper .header-r2c {
   background-color: #FFF;
   border-bottom: 1px solid #06b7a4;
-  /* z-index: 99 !important; */
+}
+.sticky-wrapper.is-sticky .header-r2c {
+  z-index: 2 !important;
 }
 .header-r2c .header-r2c-top {
   background: #06b7a4;
@@ -4792,6 +4794,9 @@ a.text-dk{
   text-transform: uppercase;
   margin-bottom: 20px;
 }
+.block-customer-new-content .owl-carosuel {
+  z-index: 1;
+}
 .card-profile {
   display: inline-block;
   position: relative;
@@ -4864,7 +4869,7 @@ body.Rightsidebar {
   position: fixed;
   right: -120%;
   background-color: #fff;
-  min-height: 100vh;
+  min-height:  calc(100vh - 121px);
   width: 320px;
   top: 0;
   bottom: 0;
@@ -4892,12 +4897,8 @@ body.Rightsidebar {
 }
 .block-rightSidebar .block-title {
   padding: 10px;
-  text-align: left;
   position: relative;
   border-bottom: 1px solid #ccc;
-  position: absolute;
-  top: 75px;
-  width: 100%;
 }
 .block-rightSidebar .block-title h2 {
   font-size: 14px;

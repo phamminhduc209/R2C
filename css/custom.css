@@ -3425,6 +3425,10 @@ textarea.error_focus, textarea.error_focus:focus{
 
 .owl-carousel .owl-nav>div.owl-prev { left: -30px; }
 .owl-carousel .owl-nav>div.owl-next { right: -30px; }
+@media (max-width: 1024px) {
+  .owl-carousel .owl-nav>div.owl-left {left: 0;}
+  .owl-carousel .owl-nav>div.owl-next {right: 0;}
+}
 
 .block-brand .owl-carousel .owl-nav>div { width: 24px; background-color: #333; }
 

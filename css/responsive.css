@@ -235,6 +235,9 @@
 */
 
 @media (max-width: 1024px) {
+    #sticky-wrapper, .header-r2c {
+        display: none;
+    }
     .header2 .header-top {
         padding: 0;
     }

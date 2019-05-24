@@ -13,7 +13,7 @@
     "use strict";
   /* ==================================================== */
 
-  $('.header-toolbox .cart ').on('click', function() {
+  $('.cart').on('click', function() {
     $(this).addClass('active');
     $('body').addClass('Rightsidebar');
     $('#showSidebar_Card').addClass('active');
@@ -25,12 +25,17 @@
     $('.block-rightSidebar').removeClass('active');
   })
 
-  function HeightFooter(){
-    var x = $('#sticky-wrapper').height();
-    $('.block-rightSidebar .sidebar-content').css('padding-top', x);
+  function HeightCart(){
+    var h_headertop = $('#sticky-wrapper .header-r2c .header-r2c-top').outerHeight();
+    $('.block-rightSidebar').css('top', h_headertop);
+  }
+  function pb_cart(){
+    var p_cart = $('.header-hotline-mobile').outerHeight() + 5;
+    $('.block-rightSidebar').css('padding-bottom', p_cart);
   }
   $(window).on('load resize', function(){
-    HeightFooter()
+    HeightCart();
+    pb_cart();
   });
 
   /*
