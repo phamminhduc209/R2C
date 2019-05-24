@@ -13,7 +13,7 @@
     "use strict";
   /* ==================================================== */
 
-  $('.cart').on('click', function() {
+  $('.cart_click').on('click', function() {
     $(this).addClass('active');
     $('body').addClass('Rightsidebar');
     $('#showSidebar_Card').addClass('active');
