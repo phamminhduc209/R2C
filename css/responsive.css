@@ -229,6 +229,12 @@
     }
 }
 
+@media (min-width: 1025px) {
+    .block-rightSidebar {
+        padding-bottom: 0 !important;
+    }
+}
+
 
 /*----------------
 [Styles for devices max 1024px
