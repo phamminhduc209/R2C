@@ -30,7 +30,7 @@
     $('.block-rightSidebar').css('top', h_headertop);
   }
   function pb_cart(){
-    var p_cart = $('.header-hotline-mobile').outerHeight() + 5;
+    var p_cart = $('.header-hotline-mobile').outerHeight();
     $('.block-rightSidebar').css('padding-bottom', p_cart);
   }
   $(window).on('load resize', function(){

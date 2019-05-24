@@ -4375,9 +4375,6 @@ h1.title-main {
   background-color: #FFF;
   border-bottom: 1px solid #06b7a4;
 }
-.sticky-wrapper.is-sticky .header-r2c {
-  z-index: 2 !important;
-}
 .header-r2c .header-r2c-top {
   background: #06b7a4;
   padding: 10px 0;
@@ -4873,7 +4870,7 @@ body.Rightsidebar {
   width: 320px;
   top: 0;
   bottom: 0;
-  z-index: 2;
+  z-index: 10;
   overflow-y: auto;
   opacity: 1;
   visibility: visible;
