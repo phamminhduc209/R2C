@@ -4467,7 +4467,7 @@ select.form-control { min-width: 100%; }
 .add-to-cart--form .cart-inner .cart-items .cart-header h2 {display: inline-block; padding: 5px 20px 5px 5px; background: #06b7a4; color: #FFF; font-size: var(--text-sm); cursor: pointer; margin-bottom: 0;}
 .add-to-cart--form .cart-inner .cart-items .cart-header span {position: absolute; top: 50%; -webkit-transform: translate(0, -50%); -ms-transform: translate(0, -50%); transform: translate(0, -50%); right: 0; font-weight: bold; color: var(--secondary-color); font-size: 16px;}
 .add-to-cart--form .cart-inner .cart-items .cart .cart-item { overflow-y: auto; height: 400px; padding-right: 15px; margin-bottom: 15px;}
-.add-to-cart--form .cart-inner .cart-total {font-size: 15px;font-weight: 700;text-align: right;color: #5f5f5f;margin-bottom: 10px;position: relative;display: flex;justify-content: flex-end;}
+.add-to-cart--form .cart-inner .cart-total {font-size: 15px;font-weight: 700;text-align: right;color: #5f5f5f;margin-bottom: 5px;position: relative;display: flex;justify-content: space-between;}
 .add-to-cart--form .cart-inner .cart-total .price {color: #000000; margin-left: 10px;}
 .add-to-cart--form .cart-inner .cart-total p {margin-bottom: 0; word-break: break-all; text-transform: uppercase;}
 .add-to-cart--form .product-list li { position: relative; padding-right: 30px; padding-bottom: 15px; margin-bottom: 15px; border-bottom: 1px solid #d8d8d8; display: table; width: 100%}
@@ -4505,7 +4505,7 @@ select.form-control { min-width: 100%; }
 .add-to-cart--form .product-list .qty,
 .add-to-cart--form .product-list .price { display: inline-block; margin-top: 0; }
 .add-to-cart--form .cartfix {position: absolute;right: 0;bottom: 0;left: 0;background: #FFF;}
-.add-to-cart--form .cartfix .cart_payment {padding-right: 20px;padding-top: 10px;border-top: 1px solid #D8D8D8;}
+.add-to-cart--form .cartfix .cart_payment {padding: 10px;border-top: 1px solid #D8D8D8;}
 .add-to-cart--form .cartfix .btn-primary {border-radius: 0;}
 /*Three col */
 .block-layout-three-col .block-article/*,
