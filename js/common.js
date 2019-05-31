@@ -15,7 +15,7 @@
 
   $('.cart_click').on('click', function() {
     $(this).addClass('active');    
-    loadCart();
+    // loadCart();
   });
 
   $('.block-rightSidebar .block-title .iconClose, .sidebar-overlay').on('click', function() {

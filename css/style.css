@@ -19,10 +19,10 @@
   ========================================================================== */
 /*  Css */
 
-@import url(../lib/bootstrap/bootstrap.min.css);
-@import url(../lib/font-awesome/font-awesome.min.css);
-@import url(../lib/carousel/owl.carousel.min.css);
-@import url(../lib/flexslider/flexslider.css);
+@import url(http://demo.enb.vn/public/site/lib/bootstrap/bootstrap.min.css);
+@import url(../lib/fontawesome/font-awesome.min.css);
+@import url(http://demo.enb.vn/public/site/lib/carousel/owl.carousel.min.css);
+@import url(http://demo.enb.vn/public/site/lib/flexslider/flexslider.css);
 @import url(custom.css);
 /* Fonts */
 @import url('https://fonts.googleapis.com/css?family=Nunito:300,400,600,700&subset=vietnamese');
@@ -4480,6 +4480,9 @@ h1.title-main {
   font-size: 16px;
   line-height: 1;
 }
+.block-about-r2c {
+  margin-top: 60px;
+}
 .block-about-r2c .row {
   display: -ms-flexbox;
   display: flex;
@@ -4495,11 +4498,6 @@ h1.title-main {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
-  height: 250px;
-}
-.block-about-r2c .r2c-img img {
-  width: auto;
-  height: 250px;
 }
 .block-about-r2c .r2c-video .inner {
   display: flex;
@@ -5002,4 +5000,9 @@ body.Rightsidebar {
 }
 .error_pass_user_checkout .alert-loi{
   margin-top: 5px;
+}
+
+/* DNRT */
+.product_drnt .title {
+  
 }
