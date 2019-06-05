@@ -5032,11 +5032,12 @@ body.Rightsidebar {
 .product_drnt2 .item .inner {
   background: #fff;
   border: 2px solid #D8D8D8;
-  -webkit-box-shadow: var(--shadow);
-  -moz-box-shadow: var(--shadow);
   box-shadow: var(--shadow);
   border-color: var(--border-color);
+  height: 100%;
   position: relative;
+  -webkit-box-shadow: var(--shadow);
+  -moz-box-shadow: var(--shadow);
 }
 
 .product_drnt2 .item .info_sold {
