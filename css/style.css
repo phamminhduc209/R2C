@@ -421,6 +421,15 @@ font-weight: 700;
   color: var(--white-color);
 }
 
+.btn_postnews {
+  height: auto;
+  line-height: normal;
+  border-radius: 50px;
+  padding-top: 5px;
+  padding-bottom: 4px;
+  font-weight: bold;
+}
+
 .text-link {
   color: var(--base-color);
   font-weight: 600;
@@ -3947,17 +3956,17 @@ h1.title-main {
 }
 
 .videoWrapper {
-	position: relative;
-	padding-bottom: 56.25%; /* 16:9 */
-	padding-top: 25px;
-	height: 0;
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  padding-top: 25px;
+  height: 0;
 }
 .videoWrapper iframe {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 
@@ -4480,9 +4489,6 @@ h1.title-main {
   font-size: 16px;
   line-height: 1;
 }
-.block-about-r2c {
-  margin-top: 60px;
-}
 .block-about-r2c .row {
   display: -ms-flexbox;
   display: flex;
@@ -4498,6 +4504,11 @@ h1.title-main {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
+  height: 250px;
+}
+.block-about-r2c .r2c-img img {
+  width: auto;
+  height: 250px;
 }
 .block-about-r2c .r2c-video .inner {
   display: flex;
@@ -4838,26 +4849,26 @@ a.text-dk{
 .card-profile .card-description {
   position: relative;
   line-height: 1.4;
-	text-rendering: optimizeLegibility;
-	font-smoothing: antialiased;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-fon-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-fon-smoothing: grayscale;
 }
 .card-profile .card-description:first-of-type:before,
 .card-profile .card-description:last-of-type:after {
   font-size: 40px;
-	width: 10px;
-	height: 10px;
+  width: 10px;
+  height: 10px;
   position: absolute;
 }
 .card-profile .card-description:first-of-type:before {
-	content: "“";
-	top: -12px;
-	left: -5px;
+  content: "“";
+  top: -12px;
+  left: -5px;
 }
 .card-profile .card-description:last-of-type:after {
-	content: "”";
-	bottom: 20px;
+  content: "”";
+  bottom: 20px;
 }
 .title-r2c{
   text-transform: uppercase;
@@ -4914,7 +4925,7 @@ body.Rightsidebar {
 }
 .block-rightSidebar .block-title .iconClose {
   position: absolute;
-  top: 12px;
+  top: 15px;
   right: 10px;
 }
 .block-rightSidebar .block-title .icon-close {
@@ -4924,8 +4935,8 @@ body.Rightsidebar {
   height: 20px;
   min-width: 8px;
   min-height: 8px;
-  max-width: 30px;
-  max-height: 30px;
+  max-width: 15px;
+  max-height: 15px;
   stroke-width: 0;
   stroke: #333;
   fill: #333;
@@ -4943,6 +4954,9 @@ body.Rightsidebar {
 .block-rightSidebar .shop-cart-sidebar {
   overflow-y: scroll;
   height: calc(100vh - 360px);
+}
+.block-rightSidebar .shop-cart-sidebar.shop-cart-sidebar-empty {
+  overflow-y: hidden;
 }
 
 .Rightsidebar .sidebar-overlay {
@@ -5002,7 +5016,60 @@ body.Rightsidebar {
   margin-top: 5px;
 }
 
-/* DNRT */
-.product_drnt .title {
-  
+.product_drnt .block_slides .item span {
+  display: block;
+  text-align: center;
+}
+.product_drnt .block_slides .item .img {
+  padding: 10px;
+  background: #c0e6e9;
+}
+.product_drnt .block_slides .item .txt {
+  color: var(--primary-color);
+  font-size: 18px;
+  margin-top: 5px;
+}
+.product_drnt2 .item .inner {
+  background: #fff;
+  border: 2px solid #D8D8D8;
+  -webkit-box-shadow: var(--shadow);
+  -moz-box-shadow: var(--shadow);
+  box-shadow: var(--shadow);
+  border-color: var(--border-color);
+  position: relative;
+}
+
+.product_drnt2 .item .info_sold {
+  color: #FFF;
+  font-size: 11px;
+  position: absolute;
+  top: 20px;
+  right: -2px;
+  background: var(--primary-color);
+  padding: 3px 10px 1px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.product_drnt2 .item .info {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  margin-top: 20px;
+  margin-left: 15px;
+}
+.product_drnt2 .item .info .ico {
+  width: 30px;
+  margin-right: 10px;
+  margin-bottom: 0;
+}
+.product_drnt2 .item .info .ifn span {
+  display: block;
+  line-height: 1;
+  color: #2ec2b2;
+}
+.product_drnt2 .item .info .ifn .down {
+  color: #96b2c1;
 }
