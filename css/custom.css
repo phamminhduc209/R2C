@@ -333,7 +333,7 @@ border-color: #333;
 }
 
 
-/* CSS ThĂªm */
+/* CSS Thêm */
 
 .alert-loi {
   padding: 5px 5px 5px 10px !important;
@@ -3433,7 +3433,7 @@ textarea.error_focus, textarea.error_focus:focus{
 
 /* Banner catalog */
 .block-banner-catalog img { width: 100%; }
-/* Ä‘Äƒng kĂ½ tuyá»ƒn sinh */
+/* đăng ký tuyển sinh */
 .block-dangky-tuyensinh .caption { color: #fff; margin-bottom: 15px; }
 .block-dangky-tuyensinh .block-content .inner { background-color: #111111; color: #fff; font-size: 13px; padding-top: 35px; padding-bottom: 0; padding-right: 30px;}
 .block-dangky-tuyensinh .block-content .form-group select { color: #666; min-width: 100%; cursor: pointer; }
@@ -3441,7 +3441,7 @@ textarea.error_focus, textarea.error_focus:focus{
 .block-dangky-tuyensinh .block-content .btn-main { border-radius: 0; background-color: #fff; border: 0; color: #111111; text-transform: uppercase; font-size: 14px; padding: 8px;}
 .block-dangky-tuyensinh .block-content .btn-main:hover { background-color: #333; border: 0; color: #fff; box-shadow: unset; }
 
-/* ÄÄƒng kĂ½ tráº£i nghiá»‡m */
+/* Đăng ký trải nghiệm */
 .checkboxstyle {
     display: table;
     position: relative;
@@ -4788,7 +4788,7 @@ select.form-control { min-width: 100%; }
   z-index: 2;
 }
 .backload:before {
-  content: "Vui lĂ²ng Ä‘á»£i...";
+  content: "Vui lòng đợi...";
   color: #f3ff57;
   width: 100%;
   display: block;
