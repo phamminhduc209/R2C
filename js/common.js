@@ -208,3 +208,9 @@ $(window).on('load resize', function(){
   HeightCart();
   resetWidthCart();
 });
+
+$('.m_menu--cate--list li.has-child>a').click(function () {
+  $(this).parent().toggleClass('open');
+  $(this).next().slideToggle();
+  $(this).parent().siblings().removeClass('open').find('.cate-child').hide('100');
+});
