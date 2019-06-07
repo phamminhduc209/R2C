@@ -1391,12 +1391,6 @@
     }
 }
 
-@media (min-width: 667px) {
-    .product-r2c .price {
-        justify-content: flex-end;
-    }
-}
-
 
 /*----------------
 [Styles for devices max 600px
