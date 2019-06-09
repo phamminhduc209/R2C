@@ -3353,7 +3353,12 @@ textarea.error_focus, textarea.error_focus:focus{
 }
 
 /* product detail */
-.block-page-common .block-product-options .bl-modul-cm .title { margin-right: 5px; }
+.block-page-common .block-product-options .bl-modul-cm .title {
+  margin-right: 5px;
+  float: unset;
+  font-weight: normal;
+  width: 100px;
+}
 .block-page-common .block-product-options .bl-modul-cm .des span { display: block; }
 .block-page-common hr { border-color: #d8d8d8; margin-bottom: 0; margin-top: 15px;}
 .block-page-common .bl-price hr { margin-top: 0; }
@@ -5181,4 +5186,40 @@ body.modal-open { padding-right: 12px!important; }
 @media (max-width: 1024px) {
   .affix,
   .affix-top {position: static!important; }
+}
+
+.col-xs-5-cols,
+.col-sm-5-cols,
+.col-md-5-cols,
+.col-lg-5-cols {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.col-xs-5-cols {
+  width: 20%;
+  float: left;
+}
+
+@media (min-width: 768px) {
+  .col-sm-5-cols {
+      width: 20%;
+      float: left;
+  }
+}
+
+@media (min-width: 992px) {
+  .col-md-5-cols {
+      width: 20%;
+      float: left;
+  }
+}
+
+@media (min-width: 1200px) {
+  .col-lg-5-cols {
+      width: 20%;
+      float: left;
+  }
 }

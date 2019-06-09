@@ -214,3 +214,39 @@ $('.m_menu--cate--list li.has-child>a').click(function () {
   $(this).next().slideToggle();
   $(this).parent().siblings().removeClass('open').find('.cate-child').hide('100');
 });
+$("#js-range-slider-status-products").ionRangeSlider({
+    type: "double",
+    skin: "round",
+    grid: true,
+    min: 70,
+    max: 99,
+    from: 85,
+    to: 90,
+    // prefix: "%"
+});
+$('.m_user_post--list .m_user_post--list--item .cmt .text .viewmore').click(function () {
+  $(this).parent().find('p').animate({height:"100%"}, 10);
+});
+
+$(document).ready(function () {
+  $("#upload").change(function () {
+    var file = this.files[0];
+    var imageFile = file.type;
+    var match = ["image/jpeg", "image/png", "image/jpg"];
+    if (!((imageFile == match[0]) || (imageFile == match[1]) || (imageFile == match[2]))) {
+      $("#type").text("Only Jpeg/ Jpg /Png /Gif are allowed");
+      return false;
+    } else {
+      $("#type").hide();
+      //alert("required");
+      var reader = new FileReader();
+      reader.onload = imageIsLoaded;
+      reader.readAsDataURL(this.files[0]);
+    }
+  });
+  function imageIsLoaded(e) {
+    $("#imageReader").attr('src', e.target.result);
+    $(".camera").hide();
+    $("#imgRead").show();
+  }
+});
