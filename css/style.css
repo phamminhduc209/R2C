@@ -5646,11 +5646,12 @@ body.Rightsidebar {
   font-size: 14px;
 }
 .m_upload_images--form {
-  display: flex;
+  display: block;
 }
 .m_upload_images--form .m_upload_images--uploadFile {
   width: 200px;
   height: 200px;
+  float: left;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -5788,7 +5789,7 @@ body.Rightsidebar {
   border-radius: 20px;
   margin-bottom: 70px;
 }
-.m_post-product--pay .m_post-product--pay--inner:last-child {
+.m_post-product--pay .m_post-product--pay--inner+.m_post-product--pay--inner {
   margin-bottom: 0;
 }
 .m_post-product--pay .m_post-product--pay--head {

@@ -1382,6 +1382,13 @@
     .block-cate-new .item img{
         width: 100% !important;
     }
+    .m_user_post--content .m_user_post--content-border {
+        border-right: none;
+        margin-bottom: 20px;
+    }
+    .m_type_news a {
+        width: 100%;
+    }
 }
 
 @media (max-width: 650px) {
@@ -1478,6 +1485,13 @@
     }
     .block-about-r2c .r2c-video iframe {
         height: 300px;
+    }
+    .m_type--cate-inner {
+        flex-direction: column;
+    }
+    .m_type--cate .m_type--cate-item {
+        width: 100%;
+        margin-bottom: 15px;
     }
 }
 
@@ -1640,6 +1654,12 @@
     .block-links-new .menu-r2c ul li a {
         font-size: 13px;
     }
+    .m_user_post .m_user_post--head {
+        flex-direction: column;
+    }
+    .m_user_post .m_user_post--head .m_user_post--name {
+        margin-bottom: 15px;
+    }
 }
 
 
@@ -1764,6 +1784,18 @@
         margin-bottom: 0;
         width: 100%;
     }
+    .m_form .m_form-title {
+        flex-direction: column;
+    }
+    .m_upload_images--form .m_upload_images--uploadFile {
+        margin: 0 auto 10px;
+        position: relative;
+        text-align: center;
+        float: unset;
+    }
+    .m_post-product--pay .m_post-product--pay--head {
+        width: auto;
+    }
 }
 
 
@@ -1795,6 +1827,10 @@
     }
     .add-to-cart--form .cart-inner .cart-total p {
         font-size: 12px;
+    }
+    .m_post-product--pay .m_post-product--pay--head {
+        font-size: 14px;
+        padding: 15px 10px;
     }
 }
 
