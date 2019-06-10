@@ -44,6 +44,7 @@
         <link rel="icon" href="https://enb.vn/uploads/images/logo-banner/favicon5.png" type="image/x-icon" />
         <link rel="shortcut icon" href="https://enb.vn/uploads/images/logo-banner/favicon5.png" type="image/x-icon" />
         <link rel="stylesheet" type="text/css" href="https://enb.vn/public/site/css/animate.css">
+        <link rel="stylesheet" href="lib/ionrangeSlider/css/ion.rangeSlider.min.css"/>
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="stylesheet" href="css/responsive.css">
         <link rel="stylesheet" href="https://enb.vn/public/site/css/jquery.fancybox.min.css">
@@ -88,7 +89,7 @@
             }(document, 'script', 'facebook-jssdk'));
         </script>
         <div id="wrapper">
-            <header class="header-r2c">
+            <header class="header-r2c hidden-xs">
                 <div class="header-r2c-inner">
                     <div class="header-r2c-top">
                         <div class="container">
@@ -128,9 +129,11 @@
                         <div class="menu-r2c">
                             <ul>
                                 <li><a href="index.html" title="">Trang Chủ</a></li>
-                                <li class="active"><a href="r2c.html" title="">R2C</a></li>
+                                <li><a href="r2c.html" title="">R2C</a></li>
                                 <li><a href="#" title="">HTD</a></li>
-                                <li><a href="drnt.html" title="">DNRT</a></li>
+                                <li class="active"><a href="dnrt.html" title="">DNRT</a></li>
+                                <li><a href="#" title="">Mẫu thử</a></li>
+                                <li><a href="#" title="">Thành viên EnB</a></li>
                                 <li><a href="#" title="">Liên Hệ</a></li>
                             </ul>
                         </div>
@@ -299,7 +302,14 @@
                             </div>
                             <div class="r2c-video">
                                 <div class="inner">
-                                    <iframe src="https://www.youtube.com/embed/cdkSV-mBg0s" frameborder="0" allowfullscreen></iframe>
+                                    <button type="button" class="top_movie_btn js_top_movie_btn">
+                                        <p class="name">
+                                            <span><img src="images/ytb.png" alt=""></span>
+                                            <span>Giới thiệu về EnB.vn<br><a href="#" title="">enb.vn</a></span>
+                                        </p>
+                                        <p class="icn"><i class="fa fa-youtube-play"></i></p>
+                                    </button>
+                                    <iframe class="js_top_movie_player" src="https://www.youtube.com/embed/cdkSV-mBg0s?enablejsapi=1&rel=0" frameborder="0" allowfullscreen></iframe>
                                 </div>
                             </div>
                         </div>
@@ -401,7 +411,6 @@
                                         <a href="#" title="">
                                             <img src="images/dnrt_08.jpg" alt="">
                                         </a>
-                                        
                                     </div>
                                     <div class="des">
                                         <div class="block-button-item">
@@ -414,10 +423,13 @@
                                                 <p class="price-now">85,000đ</p>
                                                 <p class="price-member">
                                                     <span>68,000đ</span>
-                                                    <a href="#" title="">(Đăng Ký)</a>
-                                                </p>                                               
+                                                    <span class="text-base">(Giá thành viên)*</span>
+                                                    <a class="arrow-up" href="#" title="#">
+                                                        <span class="tooltip-arrow"></span>
+                                                        Đăng Kí Ngay
+                                                    </a>
+                                                </p>
                                             </div>
-                                            <p class="text-base">(Giá thành viên)</p>
                                         </div>
                                         <p class="text-center status">80% MỚI</p>
                                     </div>
@@ -448,10 +460,13 @@
                                                 <p class="price-now">85,000đ</p>
                                                 <p class="price-member">
                                                     <span>68,000đ</span>
-                                                    <a href="#" title="">(Đăng Ký)</a>
+                                                    <span class="text-base">(Giá thành viên)*</span>
+                                                    <a class="arrow-up" href="#" title="#">
+                                                        <span class="tooltip-arrow"></span>
+                                                        Đăng Kí Ngay
+                                                    </a>
                                                 </p>                                               
                                             </div>
-                                            <p class="text-base">(Giá thành viên)</p>
                                         </div>
                                         <p class="text-center status">80% MỚI</p>
                                     </div>
@@ -482,10 +497,13 @@
                                                 <p class="price-now">85,000đ</p>
                                                 <p class="price-member">
                                                     <span>68,000đ</span>
-                                                    <a href="#" title="">(Đăng Ký)</a>
+                                                    <span class="text-base">(Giá thành viên)*</span>
+                                                    <a class="arrow-up" href="#" title="#">
+                                                        <span class="tooltip-arrow"></span>
+                                                        Đăng Kí Ngay
+                                                    </a>
                                                 </p>                                               
                                             </div>
-                                            <p class="text-base">(Giá thành viên)</p>
                                         </div>
                                         <p class="text-center status">80% MỚI</p>
                                     </div>
@@ -516,18 +534,21 @@
                                                 <p class="price-now">85,000đ</p>
                                                 <p class="price-member">
                                                     <span>68,000đ</span>
-                                                    <a href="#" title="">(Đăng Ký)</a>
+                                                    <span class="text-base">(Giá thành viên)*</span>
+                                                    <a class="arrow-up" href="#" title="#">
+                                                        <span class="tooltip-arrow"></span>
+                                                        Đăng Kí Ngay
+                                                    </a>
                                                 </p>                                               
                                             </div>
-                                            <p class="text-base">(Giá thành viên)</p>
                                         </div>
                                         <p class="text-center status">80% MỚI</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="text-center" style="margin-top: 20px;">
-                            <a class="btn btn-primary" href="#" title="">Xem Thêm...</a>
+                        <div class="text-center">
+                            <a class="btn btn-primary" href="#" title="">Xem Thêm ...</a>
                         </div>
                     </div>
                 </div>
@@ -1311,6 +1332,8 @@
             <script src="https://enb.vn/public/site/lib/carousel/owl.carousel.min.js"></script>
             <!-- sticky -->
             <script src="https://enb.vn/public/site/lib/sticky/jquery.sticky.js"></script>
+            <!-- ion.rangeSlider -->
+            <script src="lib/ionrangeSlider/js/ion.rangeSlider.min.js"></script>
             <!-- Js Common -->
             <script src="js/common.js"></script>
             <!-- Js zoom -->
@@ -1923,12 +1946,12 @@
                     }
                 });
                 // Header Sticky
-                // $(document).ready(function(){
-                //     $(".header-r2c").sticky({
-                //         topSpacing: 0,
-                //         zIndex: 9
-                //     });
-                // });
+                $(document).ready(function(){
+                    $(".header-r2c").sticky({
+                        topSpacing: 0,
+                        zIndex: 9
+                    });
+                });
             </script>
             <script type="text/javascript">
                 $(document).ready(function(){

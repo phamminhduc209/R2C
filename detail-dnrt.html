@@ -44,6 +44,7 @@
         <link rel="icon" href="https://enb.vn/uploads/images/logo-banner/favicon5.png" type="image/x-icon" />
         <link rel="shortcut icon" href="https://enb.vn/uploads/images/logo-banner/favicon5.png" type="image/x-icon" />
         <link rel="stylesheet" type="text/css" href="https://enb.vn/public/site/css/animate.css">
+        <link rel="stylesheet" href="lib/ionrangeSlider/css/ion.rangeSlider.min.css"/>
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="stylesheet" href="css/responsive.css">
         <link rel="stylesheet" href="https://enb.vn/public/site/css/jquery.fancybox.min.css">
@@ -980,7 +981,7 @@
             <!-- sticky -->
             <script src="https://enb.vn/public/site/lib/sticky/jquery.sticky.js"></script>
             <!-- ion.rangeSlider -->
-            <script src="libs/ionrangeSlider/js/ion.rangeSlider.min.js"></script>
+            <script src="lib/ionrangeSlider/js/ion.rangeSlider.min.js"></script>
             <!-- Js Common -->
             <script src="js/common.js"></script>
             <!-- Js zoom -->
@@ -1575,9 +1576,7 @@
             <script type="text/javascript">
                 // fix nav
                 var heightTop = jQuery('header').outerHeight();
-                
                 jQuery(window).scroll(function () {
-                
                     var scrollTop = jQuery(this).scrollTop();
                     var w = window.innerWidth;
                     if (scrollTop > heightTop) {
@@ -1588,7 +1587,13 @@
                         jQuery('.menu').removeClass('fadeInDown fixed');
                         // jQuery('.nav-search').removeClass('on');
                     }
-                
+                });
+                // Header Sticky
+                $(document).ready(function(){
+                    $(".header-r2c").sticky({
+                        topSpacing: 0,
+                        zIndex: 9
+                    });
                 });
             </script>
             <script type="text/javascript">
