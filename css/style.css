@@ -5169,9 +5169,11 @@ body.Rightsidebar {
   margin: 0 auto;
 }
 
+.block_categories {
+  margin-top: 15px;
+}
 .block_categories .inner {
   position: relative;
-  overflow: hidden;
 }
 .block_categories .categories_menu {
   position: absolute;
@@ -5221,20 +5223,6 @@ body.Rightsidebar {
   visibility: hidden;
   transition: all .3s;
 }
-
-.block_categories:hover .categories_menu {
-  opacity: 1;
-  visibility: visible;
-  top: 100%;
-  transition: all .3s;
-}
-.block_categories .categories_menu .parent:hover .child {
-  opacity: 1;
-  visibility: visible;
-  left: 100%;
-  transition: all .3s;
-}
-
 .block-page-product_drnt .product_drnt2 .block-title {
   color: var(--primary-color);
   font-size: 16px;

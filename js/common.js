@@ -270,3 +270,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 });
+$('.block_categories').on('click', function() {
+  $(this).toggleClass('active');
+})
