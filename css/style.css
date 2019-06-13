@@ -5099,6 +5099,10 @@ body.Rightsidebar {
 }
 
 /* DNRT */
+.btn_postnews {
+  font-weight: bold;
+  font-size: 16px;
+}
 .product_drnt .block_slides .item span {
   display: block;
   text-align: center;
