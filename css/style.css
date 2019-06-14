@@ -4733,9 +4733,7 @@ h1.title-main {
   color: #FFF;
   font-size: 14px;
   position: absolute;
-  bottom: -100px;
-  left: 0;
-  right: 0;
+  right: -150px;
   background: #06b7a4;
   width: 110px;
   text-align: center;
@@ -4743,24 +4741,29 @@ h1.title-main {
   opacity: 0;
   visibility: hidden;
   transition: all .3s;
+  z-index: 1;
 }
 .product-r2c .price .price-member a .tooltip-arrow,
 .product_drnt2 .price .price-member a .tooltip-arrow {
-  position: absolute;
-  width: 0;
-  height: 0;
+  -ms-transform: translate(0, -50%);
+  -webkit-transform: translate(0, -50%);
+  border-bottom: 5px solid transparent;
   border-color: transparent;
+  border-right: 5px solid #06b7a4;
   border-style: solid;
-  top: -5px;
-  left: 50%;
+  border-top: 5px solid transparent;
+  height: 0;
+  left: -2px;
   margin-left: -5px;
-  border-width: 0 5px 5px;
-  border-bottom-color: #06b7a4;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 0;
 }
 .block-product-r2c .block-product-r2c-inner:hover .price-member a,
 .block-product-r2c .inner:hover .price-member a,
 .product_drnt2 .item .inner:hover .price-member a {
-  bottom: -25px;
+  right: -110px;
   opacity: 1;
   visibility: visible;
   transition: all .3s;
@@ -5734,6 +5737,9 @@ body.Rightsidebar {
   font-size: 20px;
 }
 
+.m_post-product .m_button__style2 {
+  margin: 30px 0 0;
+}
 .m_post-product .m_button {
   text-align: right;
 }
