@@ -318,6 +318,55 @@
                                                     <p>Lưu ý:</p>
                                                     <p>- Phần tiền này sẽ không có gái trị quy đổi thành tiền mặt hoặc chuyển khoản qua tài khoản ngân hàng của người bán.</p>
                                                     <p>- Nếu người bán yêu cầu rút tiền từ tài khoản ENB thì phần tiền này sẽ không còn giá trị để sử dụng mua hàng trên trang enb.vn</p>
+                                                    <div class="m_post-product--info">
+                                                        <form action="" method="" class="">
+                                                            <div class="row">
+                                                                <div class="col-sm-4 col-xs-12">
+                                                                    <div class="form-group">
+                                                                        <label for="price">Tiền bán sản phẩm</label>
+                                                                        <div class="input-group">
+                                                                            <input type="text" class="form-control" id="price" placeholder="">
+                                                                            <div class="input-group-addon">đ</div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-4 col-xs-12">
+                                                                    <div class="form-group">
+                                                                        <label for="tax">Phí lấy hàng</label>
+                                                                        <div class="input-group">
+                                                                            <input type="text" class="form-control" id="tax" placeholder="">
+                                                                            <div class="input-group-addon">đ</div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-4 col-xs-12">
+                                                                    <div class="form-group">
+                                                                        <label for="more">Tiền chuyển thêm vào tài khoản</label>
+                                                                        <div class="input-group">
+                                                                            <input type="text" class="form-control" id="more" placeholder="">
+                                                                            <div class="input-group-addon">đ</div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-sm-4 col-xs-12"></div>
+                                                                <div class="col-sm-4 col-xs-12">
+                                                                    <div class="form-group">
+                                                                        <label for="total">Tổng tiền chuyển khoản vào tài khoản của bạn tại ENB</label>
+                                                                        <div class="input-group">
+                                                                            <input type="text" class="form-control" id="total" placeholder="">
+                                                                            <div class="input-group-addon">%</div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-4 col-xs-12"></div>
+                                                            </div>
+                                                            <div class="m_button">
+                                                                <a class="btn btn-primary btn-next" href="#" title="">Chọn</a>
+                                                            </div>
+                                                        </form>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="m_post-product--pay--inner">
@@ -326,10 +375,45 @@
                                                     <p>Khi sản phẩm được giao thành công cho người mua và sau khi trừ phí lấy hàng:</p>
                                                     <p>Tiền bán sản phẩm sẽ được chuyển vào tài khoản của người bán đã cung cấp cho ENB sau 3-5 ngày</p>
                                                     <p>Phí chuyển khoản người nhận trả</p>
+                                                    <div class="m_post-product--info">
+                                                        <form action="" method="" class="">
+                                                            <div class="row">
+                                                                <div class="col-sm-4 col-xs-12">
+                                                                    <div class="form-group">
+                                                                        <label for="Accountnumber">Số tài khoản <span class="required">*</span></label>
+                                                                        <input type="text" class="form-control" id="Accountnumber" placeholder="">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-4 col-xs-12">
+                                                                    <div class="form-group">
+                                                                        <label for="Beneficiarysname">Tên người thụ hưởng <span class="required">*</span></label>
+                                                                        <input type="text" class="form-control" id="Beneficiarysname" placeholder="">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-sm-4 col-xs-12">
+                                                                    <div class="form-group">
+                                                                        <label for="Bankname">Tên ngân hàng <span class="required">*</span></label>
+                                                                        <input type="text" class="form-control" id="Bankname" placeholder="">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-4 col-xs-12">
+                                                                    <div class="form-group">
+                                                                        <label for="Bankbranch">Chi nhánh ngân hàng <span class="required">*</span></label>
+                                                                        <input type="text" class="form-control" id="Bankbranch" placeholder="">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="m_button">
+                                                                <a class="btn btn-primary btn-next" href="#" title="">Chọn</a>
+                                                            </div>
+                                                        </form>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="checkbox">
-                                                <label>
+                                                <label class="text-bold">
                                                     <input type="checkbox" id="checkboxWarning" value="option1">
                                                     Tôi đã đọc và đồng ý các điều khoản bán hàng của ENB
                                                 </label>
@@ -338,7 +422,7 @@
                                         <div class="m_button clearfix">
                                             <p class="pull-left fs18"><a class="text-base" href="#" title="">Xem thêm các quy định bán hàng</a></p>
                                             <a class="btn btn-primary btn-back" href="#" title=""><i class="fa fa-angle-left"></i> Quay lại</a>
-                                            <a class="btn btn-primary btn-next" href="#" title="">Gủi duyệt và đăng bán <i class="fa fa-angle-right"></i></a>
+                                            <a class="btn btn-primary btn-next" href="#" title="">Gửi duyệt và đăng bán <i class="fa fa-angle-right"></i></a>
                                         </div>
                                     </div>
                                 </div>

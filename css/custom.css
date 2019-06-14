@@ -3282,7 +3282,7 @@ textarea.error_focus, textarea.error_focus:focus{
 .header2 .header-static-text .heading { color: #111111; text-transform: uppercase; letter-spacing: -0.02em; font-size: 24px; font-weight: 700; }
 .header2 .header-static-text .sub-heading { font-size: 18px; font-weight: 600;}
 
-.wrapper { min-height: 850px; }
+/* .wrapper { min-height: 850px; } */
 /* home category style 1 */
 .block-category-list.style-1 { }
 .block-title-child {
@@ -3357,7 +3357,13 @@ textarea.error_focus, textarea.error_focus:focus{
   margin-right: 5px;
   float: unset;
   font-weight: normal;
-  width: 100px;
+  width: 160px;
+  position: relative;
+  padding-right: 5px;
+}
+.block-page-common .block-product-options .bl-modul-cm .title span {
+  position: absolute;
+  right: 0;
 }
 .block-page-common .block-product-options .bl-modul-cm .des span { display: block; }
 .block-page-common hr { border-color: #d8d8d8; margin-bottom: 0; margin-top: 15px;}
