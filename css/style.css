@@ -5156,16 +5156,21 @@ body.Rightsidebar {
   -moz-box-shadow: var(--shadow);
 }
 
-.product_drnt2 .item .info_sold {
+.product_drnt2 .item .info_status {
   color: #FFF;
   font-size: 11px;
   position: absolute;
   top: 20px;
   right: -2px;
-  background: var(--primary-color);
   padding: 3px 10px 1px;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
+}
+.product_drnt2 .item .info_sold {
+  background: #d9534f;
+}
+.product_drnt2 .item .info_trading {
+  background: #f0ad4e;
 }
 
 .product_drnt2 .item .info {
@@ -5738,7 +5743,7 @@ body.Rightsidebar {
 }
 
 .m_post-product .m_button__style2 {
-  margin: 30px 0 0;
+  padding: 30px 0 10px;
 }
 .m_post-product .m_button {
   text-align: right;
@@ -5843,16 +5848,13 @@ body.Rightsidebar {
   font-size: 18px;
   min-width: 50px;
 }
-
-.m_post-product--pay .m_post-product--pay--note {
-  margin-bottom: 50px;
-}
 .m_post-product--pay .m_post-product--pay--inner {
+  border-radius: 20px;
   border: 1px solid var(--primary-color);
+  margin-bottom: 70px;
+  margin-top: 80px;
   padding: 35px 20px 20px;
   position: relative;
-  border-radius: 20px;
-  margin-bottom: 70px;
 }
 .m_post-product--pay .m_post-product--pay--inner+.m_post-product--pay--inner {
   margin-bottom: 0;
