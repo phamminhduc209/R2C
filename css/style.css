@@ -5747,6 +5747,7 @@ body.Rightsidebar {
 }
 .m_post-product .m_button {
   text-align: right;
+  padding-top: 30px;
 }
 .m_post-product .m_button .btn-back {
   background: transparent;
@@ -5870,7 +5871,7 @@ body.Rightsidebar {
   padding: 20px;
   position: absolute;
   top: -40px;
-  width: 350px;
+  width: 400px;
 }
 .m_post-product--pay--content .m_post-product--info {
   margin-bottom: 0;
@@ -6011,4 +6012,46 @@ body.Rightsidebar {
 .m_type--cate-item--menu .parent.active a,
 .m_type--cate-item--menu li a:hover {
   font-weight: bold;
+}
+
+
+.m_user--profile {
+  background: #FFF;
+  padding: 15px 0;
+  -webkit-box-shadow: 6px 6px 15px 0px rgba(133,133,133,1);
+  -moz-box-shadow: 6px 6px 15px 0px rgba(133,133,133,1);
+  box-shadow: 6px 6px 15px 0px rgba(133,133,133,1)
+}
+.m_user--profile .m_user--profile-head .col-sm-6 {
+  border-right: 1px solid #847b7a;
+}
+.m_user--profile .m_user_post--name {
+  display: flex;
+  align-items: center;
+}
+.m_user--profile .m_user_post--name .ava {
+  margin: 0 10px 0 0;
+}
+.m_user--profile .m_user_post--name .name span:first-child {
+  color: var(--primary-color);
+  font-size: 16px;
+  font-weight: bold;
+}
+.m_user--profile .m_user_post--name .name span {
+  display: block;
+}
+.m_user--profile .m_user_post--star {
+  margin: 0 0 0 75px;
+}
+.m_user--profile .m_user_post--info li {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  margin-bottom: 5px
+}
+.m_user--profile .m_user_post--info li:last-child {
+  margin-bottom: 0;
+}
+.m_user--profile .m_user_post--info li span:first-child {
+  width: 120px;
 }
