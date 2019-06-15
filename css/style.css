@@ -5807,6 +5807,7 @@ body.Rightsidebar {
   color: var(--primary-color);
 }
 .m_post-product--info .form-group .form-control {
+  color: #000;
   border-radius: 20px;
 }
 .m_post-product--info .form-group .form-control:focus {
@@ -6015,12 +6016,16 @@ body.Rightsidebar {
 }
 
 
-.m_user--profile {
+.m_user--profile .m_user--profile-head,
+.m_user--profile .m_user--profile-content {
   background: #FFF;
   padding: 15px 0;
   -webkit-box-shadow: 6px 6px 15px 0px rgba(133,133,133,1);
   -moz-box-shadow: 6px 6px 15px 0px rgba(133,133,133,1);
   box-shadow: 6px 6px 15px 0px rgba(133,133,133,1)
+}
+.m_user--profile .m_user--profile-head {
+  margin-bottom: 20px;
 }
 .m_user--profile .m_user--profile-head .col-sm-6 {
   border-right: 1px solid #847b7a;
