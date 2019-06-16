@@ -494,14 +494,21 @@ font-weight: 700;
   height: 50px;
 }
 
+.pc {
+  display: block !important;
+}
+.sp {
+  display: none !important;
+}
 
-
-
-
-
-
-
-
+@media (max-width: 767px) {
+  .pc {
+    display: none !important;
+  }
+  .sp {
+    display: block !important;
+  }
+}
 
 .clearfix {
   clear: both;
@@ -4704,7 +4711,7 @@ h1.title-main {
   justify-content: center;
 }
 .product-r2c .price .price-inner p,
-.product_drnt2 .price .price-inner p {
+ .product_drnt2 .price .price-inner p {
   margin-bottom: 0;
   font-size: 15px;
 }
@@ -4724,12 +4731,17 @@ h1.title-main {
   font-weight: normal;
   position: relative;
 }
+.product_drnt2 .price .price-member .text-base a {
+  margin-left: 5px;
+  color: var(--primary-color);
+  font-size: 14px;
+}
 .product-r2c .price .price-member .text-base,
 .product_drnt2 .price .price-member .text-base {
   font-size: 11px;
 }
 .product-r2c .price .price-member a,
-.product_drnt2 .price .price-member a {
+.product_drnt2 .price .price-member .arrow-up {
   color: #FFF;
   font-size: 14px;
   position: absolute;
@@ -4762,7 +4774,7 @@ h1.title-main {
 }
 .block-product-r2c .block-product-r2c-inner:hover .price-member a,
 .block-product-r2c .inner:hover .price-member a,
-.product_drnt2 .item .inner:hover .price-member a {
+.product_drnt2 .item .inner:hover .price-member .arrow-up {
   right: -110px;
   opacity: 1;
   visibility: visible;
@@ -5204,7 +5216,10 @@ body.Rightsidebar {
 .product_drnt2 .info_price p {
   margin-bottom: 0;
 }
-.product_drnt2 .info_price p span {
+.product_drnt2 .info_price .info_price_sp {
+  display: none;
+}
+.product_drnt2 .info_price .info_price_pc {
   display: inline-block;
   width: 50%;
 }
@@ -5869,10 +5884,16 @@ body.Rightsidebar {
   font-size: 16px;
   font-weight: bold;
   left: 30px;
-  padding: 20px;
+  padding: 15px;
   position: absolute;
   top: -40px;
   width: 400px;
+}
+.m_post-product--pay .m_post-product--pay--head .m_post-product--partner {
+  width: 100%;
+}
+.m_post-product--pay .m_post-product--pay--head .m_post-product--partner .radio label {
+  font-weight: bold;
 }
 .m_post-product--pay--content .m_post-product--info {
   margin-bottom: 0;
