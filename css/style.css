@@ -5726,15 +5726,13 @@ body.Rightsidebar {
   display: none;
 }
 .m_upload_images--form .m_upload_images--chooseFile {
-  display:block;
-  width:150px;
-  height:150px;
-  display:none;
+  display: none;
 }
 .m_upload_images--form .m_upload_images--upload {
   position: relative;
-  max-height:150px;
-  max-width:150px;
+  max-height: 215px;
+  max-width: 215px;
+  margin-bottom: 0;
 }
 .m_upload_images--form .m_upload_images--Close {
   position: absolute;
