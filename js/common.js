@@ -245,9 +245,9 @@ $(document).ready(function () {
     }
   });
   function imageIsLoaded(e) {
-    $("#imageReader").attr('src', e.target.result);
-    $(".camera").hide();
-    $("#imgRead").show();
+    $(".m_upload_images--imageReader").attr('src', e.target.result);
+    $(".m_upload_images--camera").hide();
+    $(".m_upload_images--imageReader").show();
   }
 });
 
@@ -272,4 +272,8 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 $('.block_categories').on('click', function() {
   $(this).toggleClass('active');
+})
+
+$('.js_m_filter').click(function() {
+  $(this).parents('body').find('.js-filter-product_drnt').slideToggle();
 })

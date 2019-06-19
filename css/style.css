@@ -559,6 +559,9 @@ select {
   background: var(--color-4);
   margin-bottom: var(--space-lg);
 }
+.block-breadcrumb .container {
+  position: relative;
+}
 
 .block-breadcrumb .breadcrumb {
   margin-bottom: 0;
@@ -5824,7 +5827,7 @@ body.Rightsidebar {
 }
 .m_post-product--info .form-group .form-control {
   color: #000;
-  border-radius: 20px;
+  border-radius: 5px;
 }
 .m_post-product--info .form-group .form-control:focus {
   border-color: var(--primary-color);
@@ -5835,8 +5838,8 @@ body.Rightsidebar {
 }
 .m_post-product--info .form-group .select-cs:after {
   background-color: var(--primary-color);
-  border-bottom-right-radius: 20px;
-  border-top-right-radius: 20px;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
   bottom: 0;
   color: #FFF;
   content: "▼";
@@ -5860,8 +5863,8 @@ body.Rightsidebar {
 }
 .m_post-product--info .form-group .input-group .input-group-addon {
   background-color: var(--primary-color);
-  border-bottom-right-radius: 20px;
-  border-top-right-radius: 20px;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
   color: #FFF;
   font-size: 18px;
   min-width: 50px;

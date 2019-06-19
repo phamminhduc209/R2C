@@ -510,18 +510,41 @@
                                             <h3 class="heading-small">Hình thức thanh toán</h3>
                                         </div>
                                         <div class="form-group">
-                                            <label class="choose-another"><input type="radio" value="COD" name="payment" class="radio-cus status_nganhang" checked="checked"> COD</label>
+                                            <input class="form-check-input form-check-input--custom" type="radio" name="payment" id="COD" value="COD">
+                                            <label class="form-check-label form-check-label--custom" for="COD"> COD</label>
                                         </div>
-                                        <div class="form-group" style="display: none;">
-                                            <label class="choose-another"><input type="radio" value="Chuyển khoản" name="payment" class="radio-cus status_nganhang"> Chuyển khoản</label>
+                                        <div class="form-group">
+                                            <input class="form-check-input form-check-input--custom" type="radio" name="payment" id="tranfer" value="Chuyển khoản">
+                                            <label class="form-check-label form-check-label--custom" for="tranfer"> Tiền đợi EnB chuyển khoản từ Đơn bán #000210</label>
+                                            <div id="div-nganhang" style="display: none;">
+                                                <div class="row">
+                                                    <div class="col-sm-6 col-xs-12">
+                                                        <div class="form-group">
+                                                            <label class="title" for="">Giá trị đơn hàng #000210</label>
+                                                            <input type="text" class="form-control" value="800.000đ" placeholder="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-6 col-xs-12">
+                                                        <div class="form-group">
+                                                            <label class="title" for="">Giá trị đơn hàng cần thanh toán</label>
+                                                            <input type="text" class="form-control" value="700.000đ" placeholder="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-sm-7 col-xs-12">
+                                                        <div class="form-group">
+                                                            <label class="title" for="">Khoản tiền còn lại tiếp tục chuyển khoản</label>
+                                                            <input type="text" class="form-control" value="100.000đ" placeholder="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div id="div-nganhang" style="display: none;"><br>
-                                            <strong>CÔNG TY TNHH ENB</strong><br>
-                                            Ngân hàng Vietcombank Gia Định<br>
-                                            Số tài khoản: 0881000472209<br>
-                                            <br>
+                                        <div class="form-group">
+                                            <input class="form-check-input form-check-input--custom" type="radio" name="payment" id="momo" value="MOMO">
+                                            <label class="form-check-label form-check-label--custom" for="momo"> MOMO</label>
                                         </div>
-                                        <!-- end -->
                                         <div class="form-group" style="margin-top: 15px">
                                             <textarea class="form-control form_textarea" rows="5" name="ghichu" placeholder="Ghi chú của khách hàng"></textarea>
                                         </div>
@@ -529,9 +552,7 @@
                                             <input type="hidden" name="hoadoncuoi" value="">
                                             <input type="hidden" name="giam" value="">
                                             <input type="hidden" name="mapost" value="">
-                                            <button type="button" id="btnSave" class="btn btn-main btn_hoantat">
-                                            Đăng ký và hoàn tất đơn hàng <i class="fa fa-long-arrow-right"></i>
-                                            </button>
+                                            <button type="button" id="btnSave" class="btn btn-main btn_hoantat">Đăng ký và hoàn tất đơn hàng <i class="fa fa-long-arrow-right"></i></button>
                                         </div>
                                     </form>
                                 </div>
@@ -725,7 +746,7 @@
                           $("#company_mst").val('');
                         }
                       };
-                      $('.status_nganhang').click(function(){
+                      $('.form-billing .form-check-input').click(function(){
                         if($(this).val() == 'Chuyển khoản'){
                           $("#div-nganhang").show();
                         }else{

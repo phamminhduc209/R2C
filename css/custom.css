@@ -4400,15 +4400,39 @@ select.form-control { min-width: 100%; }
 }
 
 .static-text ul li a, .static-text ul li a:hover{
-  color: #ffffff;
+    color: #ffffff;
 }
-#div-nganhang{
-  background: #f1f1f1;
-  padding: 15px;
-  border-radius: 5px;
+#div-nganhang .title {
+    color: var(--primary-color);
+    font-size: 16px;
+    font-weight: normal;
 }
-#div-nganhang strong{
-  font-weight: 700 !important;
+#div-nganhang .form-control {
+    padding: 10px;
+    border-radius: 5px;
+    border-color: var(--primary-color);
+    color: #000;
+}
+.form-billing .form-check-label {
+    padding-left: 30px;
+}
+.form-billing .form-check-input--custom:checked + .form-check-label--custom:before,
+.form-billing .form-check-input--custom:not(:checked) + .form-check-label--custom:before {
+    right: auto;
+    left: 0;
+}
+.form-billing .form-check-input--custom:checked + .form-check-label--custom:before,
+.form-billing .form-check-input--custom:not(:checked) + .form-check-label--custom:before {
+    border-color: #000;
+}
+.form-billing .form-check-input--custom:checked + .form-check-label--custom:after,
+.form-billing .form-check-input--custom:not(:checked) + .form-check-label--custom:after {
+    background: #000;
+}
+.form-billing .form-check-input--custom:checked + .form-check-label--custom:after,
+.form-billing .form-check-input--custom:not(:checked) + .form-check-label--custom:after {
+    right: auto;
+    left: 3px;
 }
 
 
@@ -5228,4 +5252,22 @@ body.modal-open { padding-right: 12px!important; }
       width: 20%;
       float: left;
   }
+}
+.m_filter {
+    cursor: pointer;
+    -ms-transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+.m_filter i {
+    color: var(--primary-color);
+    font-size: 40px;
+}
+.m_filter small {
+    font-weight: bold;
+    margin-left: -10px;
+    vertical-align: text-top;
 }
