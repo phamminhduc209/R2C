@@ -5731,6 +5731,16 @@ body.Rightsidebar {
 }
 .m_upload_images--form .m_upload_images--upload {
   margin-bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  overflow: hidden;
+}
+.m_upload_images--form .m_upload_images--upload img {
+  display: block;
+  max-width: 100%;
+  height: 100%;
+  margin: 0 auto;
 }
 .m_upload_images--form .m_upload_images--Close {
   background: #FFF;
