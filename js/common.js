@@ -277,3 +277,5 @@ $('.block_categories').on('click', function() {
 $('.js_m_filter').click(function() {
   $(this).parents('body').find('.js-filter-product_drnt').slideToggle();
 })
+
+$('[data-toggle="popover"]').popover({ trigger: "hover | focus", html: "true" });
