@@ -1,0 +1,1 @@
+<h2 style="text-align: center; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">EnB.vn không được hỗ trợ trên Internet Explorer.<br/>Vui lòng truy cập EnB.vn bằng các trình duyệt khác</h2>
