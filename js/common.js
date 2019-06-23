@@ -228,27 +228,31 @@ $('.m_user_post--list .m_user_post--list--item .cmt .text .viewmore').click(func
   $(this).parent().find('p').animate({height:"100%"}, 10);
 });
 
-$(document).ready(function () {
-  $("#upload").change(function () {
-    var file = this.files[0];
-    var imageFile = file.type;
-    var match = ["image/jpeg", "image/png", "image/jpg"];
-    if (!((imageFile == match[0]) || (imageFile == match[1]) || (imageFile == match[2]))) {
-      $("#type").text("Only Jpeg/ Jpg /Png /Gif are allowed");
-      return false;
-    } else {
-      $("#type").hide();
-      //alert("required");
-      var reader = new FileReader();
-      reader.onload = imageIsLoaded;
-      reader.readAsDataURL(this.files[0]);
+document.addEventListener('DOMContentLoaded', function () {
+  var $movieBtn = $('.js_top_movie_btn');
+  if ($movieBtn.length) {
+    var ua = navigator.userAgent;
+    function playMovie() {
+      var $player = $('.js_top_movie_player')[0].contentWindow;
+      $player.postMessage('{"event":"command", "func": "playVideo", "args":""}', '*');
+    };
+    if (ua.indexOf('iPhone') > 0 || ua.indexOf('Android') > 0 && ua.indexOf('Mobile') > 0) {
+      $movieBtn.on('touchstart', function() {
+        $movieBtn.fadeOut(100);
+      });
     }
-  });
-  function imageIsLoaded(e) {
-    $(".m_upload_images--imageReader").attr('src', e.target.result);
-    $(".m_upload_images--camera").hide();
-    $(".m_upload_images--imageReader").show();
+    $movieBtn.on('click', function() {
+      if ($movieBtn.length) $movieBtn.fadeOut();
+      playMovie();
+    });
   }
 });
+$('.block_categories').on('click', function() {
+  $(this).toggleClass('active');
+})
+
+$('.js_m_filter').click(function() {
+  $(this).parents('body').find('.js-filter-product_drnt').slideToggle();
+})
 
 $('[data-toggle="popover"]').popover({ trigger: "hover | focus", html: "true" });
