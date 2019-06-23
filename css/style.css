@@ -5315,6 +5315,13 @@ body.Rightsidebar {
   margin-bottom: 10px;
   border-bottom: 3px solid #cfe8ee;
 }
+.l_sidebar_search_btn {
+  margin-bottom: 30px;
+}
+.l_sidebar_search_btn .btn_reset {
+  background: transparent;
+  color: var(--primary-color);
+}
 
 .m_menu--cate--list li a {
   color: var(--primary-color);
@@ -5708,13 +5715,13 @@ body.Rightsidebar {
   font-weight: normal;
   font-size: 14px;
 }
-.m_upload_images--form {
-  display: block;
+.m_upload_images--form .m_upload_images--content {
+  display: flex;
+  flex-flow: row nowrap;
 }
 .m_upload_images--form .m_upload_images--uploadFile {
   width: 200px;
   height: 200px;
-  float: left;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -5723,8 +5730,17 @@ body.Rightsidebar {
   border: 2px solid #c5baba;
   position: relative;
 }
+.m_upload_images--form .m_upload_images--uploadFile .m_upload_images--camera {
+  display: block;
+}
+.m_upload_images--form .m_upload_images--uploadFile .m_upload_images--upload {
+  display: none;
+}
 .m_upload_images--form .m_upload_images--uploadFile.has-file .m_upload_images--camera {
   display: none;
+}
+.m_upload_images--form .m_upload_images--uploadFile.has-file .m_upload_images--upload {
+  display: block;
 }
 .m_upload_images--form .m_upload_images--chooseFile {
   display: none;
@@ -5871,34 +5887,35 @@ body.Rightsidebar {
 }
 
 .m_post-product--info .form-group .form_title .form_title_note {
-  opacity: 0;
-  visibility: hidden;
-  position: absolute;
-  left: 0;
-  transform: translate(0, 100px);
   background-color: #f1f1f1;
-  padding: 1.5rem;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  font-weight: normal;
+  left: 0;
+  opacity: 0;
+  padding: 1.5rem;
+  position: absolute;
+  transform: translate(0, 100px);
+  visibility: hidden;
   width: 250px;
 }
 .m_post-product--info .form-group .form_title .form_title_note:before {
-  position: absolute;
-  z-index: -1;
-  content: "";
-  right: calc(50% + 5px);
-  top: -9px;
+  border-color: transparent transparent #f1f1f1 transparent;
   border-style: solid;
   border-width: 0 10px 10px 10px;
-  border-color: transparent transparent #f1f1f1 transparent;
+  content: "";
+  position: absolute;
+  right: calc(50% + 5px);
+  top: -9px;
   transition-duration: 0.3s;
   transition-property: transform;
+  z-index: -1;
 }
 .m_post-product--info .form-group .form_title:hover .form_title_note {
-  z-index: 10;
   opacity: 1;
-  visibility: visible;
   transform: translate(0, 5px);
   transition: all 0.5s cubic-bezier(0.75, -0.02, 0.2, 0.97);
+  visibility: visible;
+  z-index: 10;
 }
 
 .m_post-product--info .form-group .select-cs:after {

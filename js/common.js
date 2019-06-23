@@ -251,31 +251,4 @@ $(document).ready(function () {
   }
 });
 
-document.addEventListener('DOMContentLoaded', function () {
-  var $movieBtn = $('.js_top_movie_btn');
-  if ($movieBtn.length) {
-    var ua = navigator.userAgent;
-    function playMovie() {
-      var $player = $('.js_top_movie_player')[0].contentWindow;
-      $player.postMessage('{"event":"command", "func": "playVideo", "args":""}', '*');
-    };
-    if (ua.indexOf('iPhone') > 0 || ua.indexOf('Android') > 0 && ua.indexOf('Mobile') > 0) {
-      $movieBtn.on('touchstart', function() {
-        $movieBtn.fadeOut(100);
-      });
-    }
-    $movieBtn.on('click', function() {
-      if ($movieBtn.length) $movieBtn.fadeOut();
-      playMovie();
-    });
-  }
-});
-$('.block_categories').on('click', function() {
-  $(this).toggleClass('active');
-})
-
-$('.js_m_filter').click(function() {
-  $(this).parents('body').find('.js-filter-product_drnt').slideToggle();
-})
-
 $('[data-toggle="popover"]').popover({ trigger: "hover | focus", html: "true" });
