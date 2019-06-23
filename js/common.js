@@ -208,6 +208,110 @@ $(window).on('load resize', function(){
   HeightCart();
   resetWidthCart();
 });
+$(document).ready(function(){
+  $("#upload1").change(function () {
+  
+    var file = this.files[0];
+    var imageFile = file.type;
+    var match = ["image/jpeg", "image/png", "image/jpg"];
+    if (!((imageFile == match[0]) || (imageFile == match[1]) || (imageFile == match[2]))) {      
+      return false;
+    } else {      
+       var reader = new FileReader();
+       reader.onload = imageIsLoaded1;
+       reader.readAsDataURL(this.files[0]);
+    }
+  });
+   $("#upload2").change(function () {
+   
+    var file = this.files[0];
+    var imageFile = file.type;
+    var match = ["image/jpeg", "image/png", "image/jpg"];
+    if (!((imageFile == match[0]) || (imageFile == match[1]) || (imageFile == match[2]))) {      
+      return false;
+    } else {      
+       var reader2 = new FileReader();
+       reader2.onload = imageIsLoaded2;
+       reader2.readAsDataURL(this.files[0]);
+    }
+  });
+    $("#upload3").change(function () {
+    
+    var file = this.files[0];
+    var imageFile = file.type;
+    var match = ["image/jpeg", "image/png", "image/jpg"];
+    if (!((imageFile == match[0]) || (imageFile == match[1]) || (imageFile == match[2]))) {      
+      return false;
+    } else {      
+       var reader3 = new FileReader();
+       reader3.onload = imageIsLoaded3;
+       reader3.readAsDataURL(this.files[0]);
+    }
+  });
+     $("#upload4").change(function () {
+   
+    var file = this.files[0];
+    var imageFile = file.type;
+    var match = ["image/jpeg", "image/png", "image/jpg"];
+    if (!((imageFile == match[0]) || (imageFile == match[1]) || (imageFile == match[2]))) {      
+      return false;
+    } else {      
+       var reader4 = new FileReader();
+       reader4.onload = imageIsLoaded4;
+       reader4.readAsDataURL(this.files[0]);
+    }
+  });
+      $("#upload5").change(function () {   
+    var file = this.files[0];
+    var imageFile = file.type;
+    var match = ["image/jpeg", "image/png", "image/jpg"];
+    if (!((imageFile == match[0]) || (imageFile == match[1]) || (imageFile == match[2]))) {      
+      return false;
+    } else {      
+       var reader5 = new FileReader();
+       reader5.onload = imageIsLoaded5;
+       reader5.readAsDataURL(this.files[0]);
+    }
+  });
+  function imageIsLoaded1(e) {
+    $(".m_upload_images--imageReader[focus=1]").attr('src', e.target.result).show();
+    $(".m_upload_images--camera[focus=1]").hide();
+    $(".m_upload_images--imageReader[focus=1]").show();
+    $(".m_upload_images--Close[focus=1]").show();    
+  }
+  function imageIsLoaded2(e) {
+    $(".m_upload_images--imageReader[focus=2]").attr('src', e.target.result).show();
+    $(".m_upload_images--camera[focus=2]").hide();
+    $(".m_upload_images--imageReader[focus=2]").show();
+    $(".m_upload_images--Close[focus=2]").show();
+  }
+  function imageIsLoaded3(e) {
+    $(".m_upload_images--imageReader[focus=3]").attr('src', e.target.result).show();
+    $(".m_upload_images--camera[focus=3]").hide();
+    $(".m_upload_images--imageReader[focus=3]").show();
+    $(".m_upload_images--Close[focus=3]").show();
+  }
+  function imageIsLoaded4(e) {
+    $(".m_upload_images--imageReader[focus=4]").attr('src', e.target.result).show();
+    $(".m_upload_images--camera[focus=4]").hide();
+    $(".m_upload_images--imageReader[focus=4]").show();
+    $(".m_upload_images--Close[focus=4]").show();
+  }
+  function imageIsLoaded5(e) {
+    $(".m_upload_images--imageReader[focus=5]").attr('src', e.target.result).show();
+    $(".m_upload_images--camera[focus=5]").hide();
+    $(".m_upload_images--imageReader[focus=5]").show();
+    $(".m_upload_images--Close[focus=5]").show();
+  }
+  $('.m_upload_images--Close').click(function(){
+     var focus = $(this).attr('focus');
+     $(".m_upload_images--imageReader[focus=" + focus + "]").attr('src', '').hide();
+      $(".m_upload_images--camera[focus=" + focus + "]").show();
+      $(".m_upload_images--imageReader[focus=" + focus + "]").hide();
+      $(".m_upload_images--Close[focus=" + focus + "]").hide();
+      $('#upload' + focus).val('');
+  });
+});
 
 $('.m_menu--cate--list li.has-child>a').click(function () {
   $(this).parent().toggleClass('open');
