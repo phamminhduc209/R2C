@@ -5240,6 +5240,17 @@ body.Rightsidebar {
   margin-top: 20px;
   margin-left: 15px;
 }
+.product_drnt2 .item .img {
+  width: auto;
+  height: 241px;
+  overflow: hidden;
+  margin: 10px;
+}
+.product_drnt2 .item .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
 .product_drnt2 .item .info .ico {
   width: 30px;
   margin-right: 10px;
