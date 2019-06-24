@@ -4777,6 +4777,7 @@ h1.title-main {
   font-weight: normal;
   position: relative;
 }
+.product-r2c .price .price-member .text-base a,
 .product_drnt2 .price .price-member .text-base a {
   margin-left: 5px;
   color: var(--primary-color);
@@ -4786,7 +4787,7 @@ h1.title-main {
 .product_drnt2 .price .price-member .text-base {
   font-size: 11px;
 }
-.product-r2c .price .price-member a,
+.product-r2c .price .price-member .arrow-up,
 .product_drnt2 .price .price-member .arrow-up {
   color: #FFF;
   font-size: 14px;
