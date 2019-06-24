@@ -5385,9 +5385,9 @@ body.Rightsidebar {
   margin-bottom: 10px;
   position: relative;
 }
-.m_menu--cate--list li.open>a,
-.m_menu--cate--list li:hover>a {
-  text-shadow: 0 0 0.01px #06b7a4, 0 0 0.01px #06b7a4, 0 0 0.01px #06b7a4;
+.m_menu--cate--list>li.open>a,
+.m_menu--cate--list>li:hover>a {
+  font-weight: bold;
 }
 .m_menu--cate--list li.has-child>a:after {
   content: "\f0d7";
@@ -5402,6 +5402,15 @@ body.Rightsidebar {
 .m_menu--cate--list ul {
   display: none;
   padding-left: 10px;
+}
+.m_menu--cate--list ul li a {
+  color: #333;
+  font-size: 14px;
+}
+.m_menu--cate--list ul li a.active,
+.m_menu--cate--list ul li a:hover {
+  color: var(--primary-color);
+  font-weight: bold;
 }
 
 .m_list--checkbox .m_list--checkbox-item {
