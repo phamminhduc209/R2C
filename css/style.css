@@ -5780,8 +5780,15 @@ body.Rightsidebar {
   font-size: 14px;
 }
 .m_upload_images--form .m_upload_images--content {
+  -ms-box-orient: horizontal;
+  -webkit-flex-wrap: wrap;
+  display: -moz-box;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: -webkit-flex;
   display: flex;
-  flex-flow: row nowrap;
+  flex-wrap: wrap;
 }
 .m_upload_images--form .m_upload_images--uploadFile {
   width: 200px;

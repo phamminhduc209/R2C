@@ -1413,6 +1413,12 @@
     .js-filter-product_drnt {
         display: none;
     }
+    .m_upload_images--form .m_upload_images--uploadFile,
+    .m_upload_images--form .m_upload_images--addmore {
+        margin: 0 auto 10px;
+        position: relative;
+        text-align: center;
+    }
 }
 
 @media (max-width: 650px) {
@@ -1871,12 +1877,6 @@
     }
     .m_form .m_form-title {
         flex-direction: column;
-    }
-    .m_upload_images--form .m_upload_images--uploadFile {
-        margin: 0 auto 10px;
-        position: relative;
-        text-align: center;
-        float: unset;
     }
     .m_post-product--pay .m_post-product--pay--head {
         width: auto;
