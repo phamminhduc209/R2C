@@ -1962,7 +1962,7 @@
     }
 }
 
-@media (max-width: 812px) and (min-width: 767px) {
+@media (max-width: 1140px) and (min-width: 767px) {
     .product_drnt2 .item {
         width: 33.3%;
     }
