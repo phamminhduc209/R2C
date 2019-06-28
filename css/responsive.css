@@ -1413,6 +1413,12 @@
     .js-filter-product_drnt {
         display: none;
     }
+    .m_upload_images--form .m_upload_images--uploadFile,
+    .m_upload_images--form .m_upload_images--addmore {
+        margin: 0 auto 10px;
+        position: relative;
+        text-align: center;
+    }
 }
 
 @media (max-width: 650px) {
@@ -1872,12 +1878,6 @@
     .m_form .m_form-title {
         flex-direction: column;
     }
-    .m_upload_images--form .m_upload_images--uploadFile {
-        margin: 0 auto 10px;
-        position: relative;
-        text-align: center;
-        float: unset;
-    }
     .m_post-product--pay .m_post-product--pay--head {
         width: auto;
     }
@@ -1962,7 +1962,7 @@
     }
 }
 
-@media (max-width: 812px) and (min-width: 767px) {
+@media (max-width: 1140px) and (min-width: 767px) {
     .product_drnt2 .item {
         width: 33.3%;
     }
