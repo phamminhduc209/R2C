@@ -1403,6 +1403,7 @@
     .product_drnt2 .info_price .info_price_pc {
         display: none;
     }
+    .product-r2c .price .price-member .text-base a,
     .product_drnt2 .price .price-member .text-base a {
         display: inline-block !important;
     }
@@ -2003,6 +2004,10 @@
         visibility: visible;
         left: 100%;
         transition: all .3s;
+    }
+    .block-product-r2c .owl-carousel .owl-stage-outer {
+        margin: -30px;
+        padding: 30px;
     }
 }
 
