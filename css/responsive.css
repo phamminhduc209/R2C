@@ -1406,6 +1406,7 @@
     .product-r2c .price .price-member .text-base a,
     .product_drnt2 .price .price-member .text-base a {
         display: inline-block !important;
+        vertical-align: bottom;
     }
     .product_drnt2 .item .inner {
         overflow: hidden;

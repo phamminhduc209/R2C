@@ -4776,11 +4776,11 @@ h1.title-main {
   font-weight: normal;
   position: relative;
 }
-.product-r2c .price .price-member .text-base a,
-.product_drnt2 .price .price-member .text-base a {
+.product-r2c .price .price-member .text-base a img,
+.product_drnt2 .price .price-member .text-base a img {
   margin-left: 5px;
-  color: var(--primary-color);
-  font-size: 14px;
+  width: 20px;
+  height: 20px;
 }
 .product-r2c .price .price-member .text-base,
 .product_drnt2 .price .price-member .text-base {
