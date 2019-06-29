@@ -2006,8 +2006,8 @@
         transition: all .3s;
     }
     .block-product-r2c .owl-carousel .owl-stage-outer {
-        margin: -35px;
-        padding: 35px;
+        margin: 0 -35px;
+        padding: 0 35px;
     }
 }
 
