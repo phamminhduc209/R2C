@@ -4857,6 +4857,7 @@ h1.title-main {
   position: relative;
   margin: 15px 0;
 }
+
 .block-product-r2c .block-product-r2c-item {
   margin-bottom: 15px;
 }
@@ -4869,7 +4870,6 @@ h1.title-main {
   box-shadow: var(--shadow);
   border-color: var(--border-color);
 }
-
 .block-detail-r2c .block-product-options .bl-modul-cm .des {
   float: unset;
 }
@@ -5214,6 +5214,7 @@ body.Rightsidebar {
   -webkit-box-shadow: var(--shadow);
   -moz-box-shadow: var(--shadow);
 }
+
 .product_drnt2 .item .info_status {
   color: #FFF;
   font-size: 11px;
@@ -5223,6 +5224,17 @@ body.Rightsidebar {
   padding: 3px 10px 1px;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
+}
+.product_drnt2 .item .img {
+  width: auto;
+  height: 241px;
+  overflow: hidden;
+  margin: 10px;
+}
+.product_drnt2 .item .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 .product_drnt2 .item .info_sold {
   background: #d9534f;
@@ -5384,9 +5396,9 @@ body.Rightsidebar {
   margin-bottom: 10px;
   position: relative;
 }
-.m_menu--cate--list li.open>a,
-.m_menu--cate--list li:hover>a {
-  text-shadow: 0 0 0.01px #06b7a4, 0 0 0.01px #06b7a4, 0 0 0.01px #06b7a4;
+.m_menu--cate--list>li.open>a,
+.m_menu--cate--list>li:hover>a {
+  font-weight: bold;
 }
 .m_menu--cate--list li.has-child>a:after {
   content: "\f0d7";
@@ -5401,6 +5413,15 @@ body.Rightsidebar {
 .m_menu--cate--list ul {
   display: none;
   padding-left: 10px;
+}
+.m_menu--cate--list ul li a {
+  color: #333;
+  font-size: 14px;
+}
+.m_menu--cate--list ul li a.active,
+.m_menu--cate--list ul li a:hover {
+  color: var(--primary-color);
+  font-weight: bold;
 }
 
 .m_list--checkbox .m_list--checkbox-item {
@@ -5770,8 +5791,15 @@ body.Rightsidebar {
   font-size: 14px;
 }
 .m_upload_images--form .m_upload_images--content {
+  -ms-box-orient: horizontal;
+  -webkit-flex-wrap: wrap;
+  display: -moz-box;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: -webkit-flex;
   display: flex;
-  flex-flow: row nowrap;
+  flex-wrap: wrap;
 }
 .m_upload_images--form .m_upload_images--uploadFile {
   width: 200px;
@@ -6186,3 +6214,4 @@ body.Rightsidebar {
 }
 .m_user--profile .m_user_post--info li span:first-child {
   width: 120px;
+}
