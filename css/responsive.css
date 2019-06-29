@@ -2005,10 +2005,10 @@
         left: 100%;
         transition: all .3s;
     }
-    .block-product-r2c .owl-carousel .owl-stage-outer {
+    /* .block-product-r2c .owl-carousel .owl-stage-outer {
         margin: 0 -35px;
         padding: 0 35px;
-    }
+    } */
 }
 
 @media (min-width: 992px) {
