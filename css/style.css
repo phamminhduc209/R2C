@@ -5404,16 +5404,17 @@ body.Rightsidebar {
   position: relative;
 }
 .m_menu--cate--list li.has-child i {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 20px;
+  color: #06b7a4;
+  cursor: pointer;
+  display: block;
+  font-size: 18px;
   height: 20px;
   line-height: 20px;
-  display: block;
-  cursor: pointer;
-  color: #06b7a4;
+  position: absolute;
+  right: 0;
   text-align: center;
+  top: 0;
+  width: 20px;
 }
 .m_menu--cate--list li.has-child.open i:before {
   content: "\f0d8";
