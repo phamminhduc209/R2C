@@ -313,7 +313,7 @@ $(document).ready(function(){
   });
 });
 
-$('.m_menu--cate--list li.has-child>a').click(function () {
+$('.m_menu--cate--list li.has-child>i').click(function () {
   $(this).parent().toggleClass('open');
   $(this).next().slideToggle();
   $(this).parent().siblings().removeClass('open').find('.cate-child').hide('100');

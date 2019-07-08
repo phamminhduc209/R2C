@@ -4776,11 +4776,11 @@ h1.title-main {
   font-weight: normal;
   position: relative;
 }
-.product-r2c .price .price-member .text-base a img,
-.product_drnt2 .price .price-member .text-base a img {
+.product-r2c .price .price-member .text-base a,
+.product_drnt2 .price .price-member .text-base a {
   margin-left: 5px;
-  width: 20px;
-  height: 20px;
+  color: var(--primary-color);
+  font-size: 14px;
 }
 .product-r2c .price .price-member .text-base,
 .product_drnt2 .price .price-member .text-base {
@@ -5400,7 +5400,25 @@ body.Rightsidebar {
 .m_menu--cate--list>li:hover>a {
   font-weight: bold;
 }
-.m_menu--cate--list li.has-child>a:after {
+.m_menu--cate--list li.has-child {
+  position: relative;
+}
+.m_menu--cate--list li.has-child i {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  display: block;
+  cursor: pointer;
+  color: #06b7a4;
+  text-align: center;
+}
+.m_menu--cate--list li.has-child.open i:before {
+  content: "\f0d8";
+}
+/* .m_menu--cate--list li.has-child>a:after {
   content: "\f0d7";
   font-family: FontAwesome;
   font-size: 18px;
@@ -5409,7 +5427,7 @@ body.Rightsidebar {
 }
 .m_menu--cate--list li.has-child.open>a:after {
   content: "\f0d8";
-}
+}*/
 .m_menu--cate--list ul {
   display: none;
   padding-left: 10px;
@@ -5652,7 +5670,7 @@ body.Rightsidebar {
   text-align: center;
 }
 
-/***** Rating *****/
+/***** Rating ****
 #rating input {
   display: none;
 }
@@ -6215,3 +6233,4 @@ body.Rightsidebar {
 .m_user--profile .m_user_post--info li span:first-child {
   width: 120px;
 }
+Oops there is a problem with the internet. Try again later :(
